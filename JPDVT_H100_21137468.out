@@ -1,0 +1,58 @@
+==============================================
+Starting job on idun-08-01 at Sun Feb  9 17:56:08 CET 2025
+CUDA and GPU Information:
+Sun Feb  9 17:56:08 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 555.42.06              Driver Version: 555.42.06      CUDA Version: 12.5     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H100 80GB HBM3          On  |   00000000:3B:00.0 Off |                    0 |
+| N/A   27C    P0             71W /  700W |       1MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA H100 80GB HBM3          On  |   00000000:5D:00.0 Off |                    0 |
+| N/A   30C    P0             69W /  700W |       1MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA H100 80GB HBM3          On  |   00000000:BB:00.0 Off |                    0 |
+| N/A   27C    P0             68W /  700W |       1MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA H100 80GB HBM3          On  |   00000000:DB:00.0 Off |                    0 |
+| N/A   26C    P0             68W /  700W |       1MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+CUDA Available: True
+==============================================
+Starting rank=0, seed=0, world_size=4.
+Starting rank=1, seed=1, world_size=4.
+Starting rank=2, seed=2, world_size=4.
+Starting rank=3, seed=3, world_size=4.
+Rank=1: Loading checkpoint from /cluster/home/muhamhz/JPDVT/image_model/results/004-imagenet-JPDVT-crop/checkpoints/4070000.pt
+Rank=0: Loading checkpoint from /cluster/home/muhamhz/JPDVT/image_model/results/004-imagenet-JPDVT-crop/checkpoints/4070000.pt
+Rank=3: Loading checkpoint from /cluster/home/muhamhz/JPDVT/image_model/results/004-imagenet-JPDVT-crop/checkpoints/4070000.pt
+Rank=2: Loading checkpoint from /cluster/home/muhamhz/JPDVT/image_model/results/004-imagenet-JPDVT-crop/checkpoints/4070000.pt
+Rank=0: Loaded 'model' state_dict from checkpoint.
+Rank=0: Loaded 'ema' state_dict from checkpoint.
+No 'train_steps' in checkpoint, so we'll start from 0.
+Optimizer state loaded from checkpoint.
+Rank=1: Loaded 'model' state_dict from checkpoint.
+Rank=1: Loaded 'ema' state_dict from checkpoint.
+Rank=2: Loaded 'model' state_dict from checkpoint.
+Rank=2: Loaded 'ema' state_dict from checkpoint.
+Rank=3: Loaded 'model' state_dict from checkpoint.
+Rank=3: Loaded 'ema' state_dict from checkpoint.
+==============================================
+Training completed at Tue Feb 11 18:12:56 CET 2025
+==============================================

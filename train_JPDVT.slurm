@@ -36,7 +36,16 @@ echo "=============================================="
 cd /cluster/home/muhamhz/JPDVT/image_model
 
 # Run training using all available H100 GPUs
-srun torchrun --nnodes=1 --nproc_per_node=4 train_JPDVT.py --dataset imagenet --data-path /cluster/home/muhamhz/data/imagenet --image-size 192 --crop
+# srun torchrun --nnodes=1 --nproc_per_node=4 train_JPDVT.py --dataset imagenet --data-path /cluster/home/muhamhz/data/imagenet --image-size 192 --crop
+srun torchrun --nnodes=1 --nproc_per_node=4 train_JPDVT.py \
+    --dataset imagenet \
+    --data-path /cluster/home/muhamhz/data/imagenet \
+    --image-size 192 \
+    --crop \
+    --ckpt /cluster/home/muhamhz/JPDVT/image_model/results/004-imagenet-JPDVT-crop/checkpoints/4070000.pt \
+    --epochs 207 \
+    --ckpt-every 50000
+
 # --rdzv_endpoint=localhost:$MASTER_PORT
 
 # Print completion message
