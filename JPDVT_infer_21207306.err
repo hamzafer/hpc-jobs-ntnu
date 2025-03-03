@@ -1,0 +1,1041 @@
+W0303 11:10:27.612000 702024 site-packages/torch/distributed/run.py:792] 
+W0303 11:10:27.612000 702024 site-packages/torch/distributed/run.py:792] *****************************************
+W0303 11:10:27.612000 702024 site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0303 11:10:27.612000 702024 site-packages/torch/distributed/run.py:792] *****************************************
+2025-03-03 11:10:33,425 [INFO] ============================================
+2025-03-03 11:10:33,427 [INFO] Starting Jigsaw Puzzle Inference Script with Resume (rank=0, world_size=4)
+2025-03-03 11:10:33,428 [INFO] Loading model [JPDVT] from checkpoint: /cluster/home/muhamhz/JPDVT/image_model/results/009-imagenet-JPDVT-crop/checkpoints/2850000.pt
+2025-03-03 11:10:33,924 [INFO] ============================================
+2025-03-03 11:10:33,924 [INFO] ============================================
+2025-03-03 11:10:33,924 [INFO] Starting Jigsaw Puzzle Inference Script with Resume (rank=2, world_size=4)
+2025-03-03 11:10:33,924 [INFO] Starting Jigsaw Puzzle Inference Script with Resume (rank=1, world_size=4)
+2025-03-03 11:10:33,932 [INFO] ============================================
+2025-03-03 11:10:33,932 [INFO] Starting Jigsaw Puzzle Inference Script with Resume (rank=3, world_size=4)
+2025-03-03 11:10:36,133 [INFO] Model and diffusion initialized.
+2025-03-03 11:10:36,133 [INFO] Reading images from: /cluster/home/muhamhz/data/imagenet/test
+2025-03-03 11:10:36,533 [INFO] Found 100000 images total.
+2025-03-03 11:10:36,711 [INFO] Resume info: 97992 images already processed.
+2025-03-03 11:10:36,711 [INFO]    So far: puzzleAcc = 0.68, patchAcc = 0.80
+2025-03-03 11:10:36,726 [INFO] [Rank=0] Processing 1/25000: ILSVRC2012_test_00097077.JPEG
+2025-03-03 11:10:37,353 [INFO] [Rank=1] Processing 1/25000: ILSVRC2012_test_00096818.JPEG
+2025-03-03 11:10:37,358 [INFO] [Rank=2] Processing 1/25000: ILSVRC2012_test_00098079.JPEG
+2025-03-03 11:10:38,245 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=1.00, patchAcc=1.00) | Time=1.52s
+2025-03-03 11:10:38,248 [INFO] [Rank=0] Processing 2/25000: ILSVRC2012_test_00097081.JPEG
+2025-03-03 11:10:38,852 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=1.00, patchAcc=1.00) | Time=1.50s
+2025-03-03 11:10:38,853 [INFO] [Rank=1] Processing 2/25000: ILSVRC2012_test_00096822.JPEG
+2025-03-03 11:10:38,871 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.11 (Running puzzleAcc=0.00, patchAcc=0.11) | Time=1.51s
+2025-03-03 11:10:38,872 [INFO] [Rank=2] Processing 2/25000: ILSVRC2012_test_00098083.JPEG
+2025-03-03 11:10:39,525 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=1.00, patchAcc=1.00) | Time=1.28s
+2025-03-03 11:10:39,526 [INFO] [Rank=0] Processing 3/25000: ILSVRC2012_test_00097085.JPEG
+2025-03-03 11:10:40,117 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=1.00, patchAcc=1.00) | Time=1.26s
+2025-03-03 11:10:40,117 [INFO] [Rank=1] Processing 3/25000: ILSVRC2012_test_00096826.JPEG
+2025-03-03 11:10:40,174 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.00, patchAcc=0.44) | Time=1.30s
+2025-03-03 11:10:40,175 [INFO] [Rank=2] Processing 3/25000: ILSVRC2012_test_00098087.JPEG
+2025-03-03 11:10:40,828 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=1.00, patchAcc=1.00) | Time=1.30s
+2025-03-03 11:10:40,829 [INFO] [Rank=0] Processing 4/25000: ILSVRC2012_test_00097089.JPEG
+2025-03-03 11:10:41,384 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.67 (Running puzzleAcc=0.67, patchAcc=0.89) | Time=1.27s
+2025-03-03 11:10:41,385 [INFO] [Rank=1] Processing 4/25000: ILSVRC2012_test_00096830.JPEG
+2025-03-03 11:10:41,470 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.33, patchAcc=0.63) | Time=1.29s
+2025-03-03 11:10:41,471 [INFO] [Rank=2] Processing 4/25000: ILSVRC2012_test_00098091.JPEG
+2025-03-03 11:10:42,100 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=1.00, patchAcc=1.00) | Time=1.27s
+2025-03-03 11:10:42,102 [INFO] [Rank=0] Processing 5/25000: ILSVRC2012_test_00097093.JPEG
+2025-03-03 11:10:42,634 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.75, patchAcc=0.92) | Time=1.25s
+2025-03-03 11:10:42,635 [INFO] [Rank=1] Processing 5/25000: ILSVRC2012_test_00096834.JPEG
+2025-03-03 11:10:42,752 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.50, patchAcc=0.72) | Time=1.28s
+2025-03-03 11:10:42,753 [INFO] [Rank=2] Processing 5/25000: ILSVRC2012_test_00098095.JPEG
+2025-03-03 11:10:43,379 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.80, patchAcc=0.96) | Time=1.28s
+2025-03-03 11:10:43,380 [INFO] [Rank=0] Processing 6/25000: ILSVRC2012_test_00097097.JPEG
+2025-03-03 11:10:43,930 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.93) | Time=1.29s
+2025-03-03 11:10:43,931 [INFO] [Rank=1] Processing 6/25000: ILSVRC2012_test_00096838.JPEG
+2025-03-03 11:10:44,035 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.56 (Running puzzleAcc=0.40, patchAcc=0.69) | Time=1.28s
+2025-03-03 11:10:44,036 [INFO] [Rank=2] Processing 6/25000: ILSVRC2012_test_00098099.JPEG
+2025-03-03 11:10:44,656 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.83, patchAcc=0.96) | Time=1.28s
+2025-03-03 11:10:44,657 [INFO] [Rank=0] Processing 7/25000: ILSVRC2012_test_00097101.JPEG
+2025-03-03 11:10:45,191 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.83, patchAcc=0.94) | Time=1.26s
+2025-03-03 11:10:45,192 [INFO] [Rank=1] Processing 7/25000: ILSVRC2012_test_00096842.JPEG
+2025-03-03 11:10:45,374 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.33, patchAcc=0.70) | Time=1.34s
+2025-03-03 11:10:45,374 [INFO] [Rank=2] Processing 7/25000: ILSVRC2012_test_00098103.JPEG
+2025-03-03 11:10:45,949 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.86, patchAcc=0.97) | Time=1.29s
+2025-03-03 11:10:45,950 [INFO] [Rank=0] Processing 8/25000: ILSVRC2012_test_00097105.JPEG
+2025-03-03 11:10:46,443 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.86, patchAcc=0.95) | Time=1.25s
+2025-03-03 11:10:46,444 [INFO] [Rank=1] Processing 8/25000: ILSVRC2012_test_00096846.JPEG
+2025-03-03 11:10:46,645 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.29, patchAcc=0.65) | Time=1.27s
+2025-03-03 11:10:46,646 [INFO] [Rank=2] Processing 8/25000: ILSVRC2012_test_00098107.JPEG
+2025-03-03 11:10:47,224 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.75, patchAcc=0.94) | Time=1.27s
+2025-03-03 11:10:47,225 [INFO] [Rank=0] Processing 9/25000: ILSVRC2012_test_00097109.JPEG
+2025-03-03 11:10:47,704 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.75, patchAcc=0.93) | Time=1.26s
+2025-03-03 11:10:47,704 [INFO] [Rank=1] Processing 9/25000: ILSVRC2012_test_00096850.JPEG
+2025-03-03 11:10:47,942 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.38, patchAcc=0.69) | Time=1.30s
+2025-03-03 11:10:47,943 [INFO] [Rank=2] Processing 9/25000: ILSVRC2012_test_00098111.JPEG
+2025-03-03 11:10:48,496 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.67, patchAcc=0.88) | Time=1.27s
+2025-03-03 11:10:48,497 [INFO] [Rank=0] Processing 10/25000: ILSVRC2012_test_00097113.JPEG
+2025-03-03 11:10:48,985 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.78, patchAcc=0.94) | Time=1.28s
+2025-03-03 11:10:48,986 [INFO] [Rank=1] Processing 10/25000: ILSVRC2012_test_00096854.JPEG
+2025-03-03 11:10:49,238 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.33, patchAcc=0.62) | Time=1.29s
+2025-03-03 11:10:49,239 [INFO] [Rank=2] Processing 10/25000: ILSVRC2012_test_00098115.JPEG
+2025-03-03 11:10:49,781 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.70, patchAcc=0.89) | Time=1.28s
+2025-03-03 11:10:49,782 [INFO] [Rank=0] Processing 11/25000: ILSVRC2012_test_00097117.JPEG
+2025-03-03 11:10:50,279 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.94) | Time=1.29s
+2025-03-03 11:10:50,280 [INFO] [Rank=1] Processing 11/25000: ILSVRC2012_test_00096858.JPEG
+2025-03-03 11:10:50,506 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.30, patchAcc=0.63) | Time=1.27s
+2025-03-03 11:10:50,507 [INFO] [Rank=2] Processing 11/25000: ILSVRC2012_test_00098119.JPEG
+2025-03-03 11:10:51,043 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.64, patchAcc=0.81) | Time=1.26s
+2025-03-03 11:10:51,044 [INFO] [Rank=0] Processing 12/25000: ILSVRC2012_test_00097121.JPEG
+2025-03-03 11:10:51,559 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.73, patchAcc=0.86) | Time=1.28s
+2025-03-03 11:10:51,560 [INFO] [Rank=1] Processing 12/25000: ILSVRC2012_test_00096862.JPEG
+2025-03-03 11:10:51,782 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.27, patchAcc=0.61) | Time=1.28s
+2025-03-03 11:10:51,783 [INFO] [Rank=2] Processing 12/25000: ILSVRC2012_test_00098123.JPEG
+2025-03-03 11:10:52,322 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.67, patchAcc=0.82) | Time=1.28s
+2025-03-03 11:10:52,323 [INFO] [Rank=0] Processing 13/25000: ILSVRC2012_test_00097125.JPEG
+2025-03-03 11:10:52,837 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.75, patchAcc=0.87) | Time=1.28s
+2025-03-03 11:10:52,838 [INFO] [Rank=1] Processing 13/25000: ILSVRC2012_test_00096866.JPEG
+2025-03-03 11:10:53,066 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.33, patchAcc=0.64) | Time=1.28s
+2025-03-03 11:10:53,067 [INFO] [Rank=2] Processing 13/25000: ILSVRC2012_test_00098127.JPEG
+2025-03-03 11:10:53,587 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.69, patchAcc=0.84) | Time=1.26s
+2025-03-03 11:10:53,588 [INFO] [Rank=0] Processing 14/25000: ILSVRC2012_test_00097129.JPEG
+2025-03-03 11:10:54,089 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.77, patchAcc=0.88) | Time=1.25s
+2025-03-03 11:10:54,090 [INFO] [Rank=1] Processing 14/25000: ILSVRC2012_test_00096870.JPEG
+2025-03-03 11:10:54,335 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.56 (Running puzzleAcc=0.31, patchAcc=0.63) | Time=1.27s
+2025-03-03 11:10:54,336 [INFO] [Rank=2] Processing 14/25000: ILSVRC2012_test_00098131.JPEG
+2025-03-03 11:10:54,865 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.11 (Running puzzleAcc=0.64, patchAcc=0.79) | Time=1.28s
+2025-03-03 11:10:54,866 [INFO] [Rank=0] Processing 15/25000: ILSVRC2012_test_00097133.JPEG
+2025-03-03 11:10:55,450 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.79, patchAcc=0.89) | Time=1.36s
+2025-03-03 11:10:55,451 [INFO] [Rank=1] Processing 15/25000: ILSVRC2012_test_00096874.JPEG
+2025-03-03 11:10:55,612 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.11 (Running puzzleAcc=0.29, patchAcc=0.60) | Time=1.28s
+2025-03-03 11:10:55,613 [INFO] [Rank=2] Processing 15/25000: ILSVRC2012_test_00098135.JPEG
+2025-03-03 11:10:56,132 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.67, patchAcc=0.80) | Time=1.27s
+2025-03-03 11:10:56,133 [INFO] [Rank=0] Processing 16/25000: ILSVRC2012_test_00097137.JPEG
+2025-03-03 11:10:56,727 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.90) | Time=1.28s
+2025-03-03 11:10:56,728 [INFO] [Rank=1] Processing 16/25000: ILSVRC2012_test_00096878.JPEG
+2025-03-03 11:10:56,932 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.33, patchAcc=0.62) | Time=1.32s
+2025-03-03 11:10:56,933 [INFO] [Rank=2] Processing 16/25000: ILSVRC2012_test_00098139.JPEG
+2025-03-03 11:10:57,418 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.69, patchAcc=0.81) | Time=1.28s
+2025-03-03 11:10:57,419 [INFO] [Rank=0] Processing 17/25000: ILSVRC2012_test_00097141.JPEG
+2025-03-03 11:10:57,983 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.81, patchAcc=0.90) | Time=1.26s
+2025-03-03 11:10:57,984 [INFO] [Rank=1] Processing 17/25000: ILSVRC2012_test_00096882.JPEG
+2025-03-03 11:10:58,204 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.38, patchAcc=0.65) | Time=1.27s
+2025-03-03 11:10:58,205 [INFO] [Rank=2] Processing 17/25000: ILSVRC2012_test_00098143.JPEG
+2025-03-03 11:10:58,696 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.65, patchAcc=0.81) | Time=1.28s
+2025-03-03 11:10:58,697 [INFO] [Rank=0] Processing 18/25000: ILSVRC2012_test_00097145.JPEG
+2025-03-03 11:10:59,292 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.56 (Running puzzleAcc=0.76, patchAcc=0.88) | Time=1.31s
+2025-03-03 11:10:59,293 [INFO] [Rank=1] Processing 18/25000: ILSVRC2012_test_00096886.JPEG
+2025-03-03 11:10:59,473 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.11 (Running puzzleAcc=0.35, patchAcc=0.61) | Time=1.27s
+2025-03-03 11:10:59,474 [INFO] [Rank=2] Processing 18/25000: ILSVRC2012_test_00098147.JPEG
+2025-03-03 11:10:59,954 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.67, patchAcc=0.82) | Time=1.26s
+2025-03-03 11:10:59,955 [INFO] [Rank=0] Processing 19/25000: ILSVRC2012_test_00097149.JPEG
+2025-03-03 11:11:00,570 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.78, patchAcc=0.89) | Time=1.28s
+2025-03-03 11:11:00,571 [INFO] [Rank=1] Processing 19/25000: ILSVRC2012_test_00096890.JPEG
+2025-03-03 11:11:00,751 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.33, patchAcc=0.60) | Time=1.28s
+2025-03-03 11:11:00,752 [INFO] [Rank=2] Processing 19/25000: ILSVRC2012_test_00098151.JPEG
+2025-03-03 11:11:01,268 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.68, patchAcc=0.83) | Time=1.31s
+2025-03-03 11:11:01,269 [INFO] [Rank=0] Processing 20/25000: ILSVRC2012_test_00097153.JPEG
+2025-03-03 11:11:01,816 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.79, patchAcc=0.89) | Time=1.25s
+2025-03-03 11:11:01,817 [INFO] [Rank=1] Processing 20/25000: ILSVRC2012_test_00096894.JPEG
+2025-03-03 11:11:02,132 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.37, patchAcc=0.62) | Time=1.38s
+2025-03-03 11:11:02,133 [INFO] [Rank=2] Processing 20/25000: ILSVRC2012_test_00098155.JPEG
+2025-03-03 11:11:02,532 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.70, patchAcc=0.84) | Time=1.26s
+2025-03-03 11:11:02,533 [INFO] [Rank=0] Processing 21/25000: ILSVRC2012_test_00097157.JPEG
+2025-03-03 11:11:03,083 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.75, patchAcc=0.87) | Time=1.27s
+2025-03-03 11:11:03,084 [INFO] [Rank=1] Processing 21/25000: ILSVRC2012_test_00096898.JPEG
+2025-03-03 11:11:03,428 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.40, patchAcc=0.64) | Time=1.30s
+2025-03-03 11:11:03,429 [INFO] [Rank=2] Processing 21/25000: ILSVRC2012_test_00098159.JPEG
+2025-03-03 11:11:03,810 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.71, patchAcc=0.85) | Time=1.28s
+2025-03-03 11:11:03,811 [INFO] [Rank=0] Processing 22/25000: ILSVRC2012_test_00097161.JPEG
+2025-03-03 11:11:04,331 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.76, patchAcc=0.87) | Time=1.25s
+2025-03-03 11:11:04,332 [INFO] [Rank=1] Processing 22/25000: ILSVRC2012_test_00096902.JPEG
+2025-03-03 11:11:04,695 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.43, patchAcc=0.66) | Time=1.27s
+2025-03-03 11:11:04,696 [INFO] [Rank=2] Processing 22/25000: ILSVRC2012_test_00098163.JPEG
+2025-03-03 11:11:05,096 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.73, patchAcc=0.85) | Time=1.28s
+2025-03-03 11:11:05,097 [INFO] [Rank=0] Processing 23/25000: ILSVRC2012_test_00097165.JPEG
+2025-03-03 11:11:05,592 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.73, patchAcc=0.87) | Time=1.26s
+2025-03-03 11:11:05,593 [INFO] [Rank=1] Processing 23/25000: ILSVRC2012_test_00096906.JPEG
+2025-03-03 11:11:05,969 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.45, patchAcc=0.67) | Time=1.27s
+2025-03-03 11:11:05,970 [INFO] [Rank=2] Processing 23/25000: ILSVRC2012_test_00098167.JPEG
+2025-03-03 11:11:06,374 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.70, patchAcc=0.82) | Time=1.28s
+2025-03-03 11:11:06,375 [INFO] [Rank=0] Processing 24/25000: ILSVRC2012_test_00097169.JPEG
+2025-03-03 11:11:06,877 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.44 (Running puzzleAcc=0.70, patchAcc=0.85) | Time=1.28s
+2025-03-03 11:11:06,878 [INFO] [Rank=1] Processing 24/25000: ILSVRC2012_test_00096910.JPEG
+2025-03-03 11:11:07,271 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.11 (Running puzzleAcc=0.43, patchAcc=0.65) | Time=1.30s
+2025-03-03 11:11:07,272 [INFO] [Rank=2] Processing 24/25000: ILSVRC2012_test_00098171.JPEG
+2025-03-03 11:11:07,644 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.67, patchAcc=0.78) | Time=1.27s
+2025-03-03 11:11:07,645 [INFO] [Rank=0] Processing 25/25000: ILSVRC2012_test_00097173.JPEG
+2025-03-03 11:11:08,131 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.71, patchAcc=0.86) | Time=1.25s
+2025-03-03 11:11:08,132 [INFO] [Rank=1] Processing 25/25000: ILSVRC2012_test_00096914.JPEG
+2025-03-03 11:11:08,550 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.42, patchAcc=0.62) | Time=1.28s
+2025-03-03 11:11:08,551 [INFO] [Rank=2] Processing 25/25000: ILSVRC2012_test_00098175.JPEG
+2025-03-03 11:11:08,915 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.68, patchAcc=0.79) | Time=1.27s
+2025-03-03 11:11:08,916 [INFO] [Rank=0] Processing 26/25000: ILSVRC2012_test_00097177.JPEG
+2025-03-03 11:11:09,382 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.72, patchAcc=0.86) | Time=1.25s
+2025-03-03 11:11:09,383 [INFO] [Rank=1] Processing 26/25000: ILSVRC2012_test_00096918.JPEG
+2025-03-03 11:11:09,817 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.44, patchAcc=0.64) | Time=1.27s
+2025-03-03 11:11:09,818 [INFO] [Rank=2] Processing 26/25000: ILSVRC2012_test_00098179.JPEG
+2025-03-03 11:11:10,194 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.69, patchAcc=0.80) | Time=1.28s
+2025-03-03 11:11:10,195 [INFO] [Rank=0] Processing 27/25000: ILSVRC2012_test_00097181.JPEG
+2025-03-03 11:11:10,658 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.73, patchAcc=0.87) | Time=1.28s
+2025-03-03 11:11:10,659 [INFO] [Rank=1] Processing 27/25000: ILSVRC2012_test_00096922.JPEG
+2025-03-03 11:11:11,080 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.46, patchAcc=0.65) | Time=1.26s
+2025-03-03 11:11:11,081 [INFO] [Rank=2] Processing 27/25000: ILSVRC2012_test_00098183.JPEG
+2025-03-03 11:11:11,470 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.70, patchAcc=0.81) | Time=1.28s
+2025-03-03 11:11:11,471 [INFO] [Rank=0] Processing 28/25000: ILSVRC2012_test_00097185.JPEG
+2025-03-03 11:11:11,918 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.74, patchAcc=0.87) | Time=1.26s
+2025-03-03 11:11:11,918 [INFO] [Rank=1] Processing 28/25000: ILSVRC2012_test_00096926.JPEG
+2025-03-03 11:11:12,341 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.44, patchAcc=0.63) | Time=1.26s
+2025-03-03 11:11:12,342 [INFO] [Rank=2] Processing 28/25000: ILSVRC2012_test_00098187.JPEG
+2025-03-03 11:11:12,722 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.71, patchAcc=0.81) | Time=1.25s
+2025-03-03 11:11:12,723 [INFO] [Rank=0] Processing 29/25000: ILSVRC2012_test_00097189.JPEG
+2025-03-03 11:11:13,172 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.56 (Running puzzleAcc=0.71, patchAcc=0.86) | Time=1.25s
+2025-03-03 11:11:13,173 [INFO] [Rank=1] Processing 29/25000: ILSVRC2012_test_00096930.JPEG
+2025-03-03 11:11:13,620 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.11 (Running puzzleAcc=0.43, patchAcc=0.61) | Time=1.28s
+2025-03-03 11:11:13,621 [INFO] [Rank=2] Processing 29/25000: ILSVRC2012_test_00098191.JPEG
+2025-03-03 11:11:13,994 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.72, patchAcc=0.82) | Time=1.27s
+2025-03-03 11:11:13,995 [INFO] [Rank=0] Processing 30/25000: ILSVRC2012_test_00097193.JPEG
+2025-03-03 11:11:14,394 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.22 (Running puzzleAcc=0.69, patchAcc=0.84) | Time=1.22s
+2025-03-03 11:11:14,395 [INFO] [Rank=1] Processing 30/25000: ILSVRC2012_test_00096934.JPEG
+2025-03-03 11:11:14,885 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.45, patchAcc=0.62) | Time=1.26s
+2025-03-03 11:11:14,886 [INFO] [Rank=2] Processing 30/25000: ILSVRC2012_test_00098195.JPEG
+2025-03-03 11:11:15,251 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.73, patchAcc=0.83) | Time=1.26s
+2025-03-03 11:11:15,252 [INFO] [Rank=0] Processing 31/25000: ILSVRC2012_test_00097197.JPEG
+2025-03-03 11:11:15,637 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.70, patchAcc=0.84) | Time=1.24s
+2025-03-03 11:11:15,638 [INFO] [Rank=1] Processing 31/25000: ILSVRC2012_test_00096938.JPEG
+2025-03-03 11:11:16,142 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.56 (Running puzzleAcc=0.43, patchAcc=0.62) | Time=1.26s
+2025-03-03 11:11:16,143 [INFO] [Rank=2] Processing 31/25000: ILSVRC2012_test_00098199.JPEG
+2025-03-03 11:11:16,500 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.74, patchAcc=0.83) | Time=1.25s
+2025-03-03 11:11:16,501 [INFO] [Rank=0] Processing 32/25000: ILSVRC2012_test_00097201.JPEG
+2025-03-03 11:11:16,887 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.56 (Running puzzleAcc=0.68, patchAcc=0.84) | Time=1.25s
+2025-03-03 11:11:16,888 [INFO] [Rank=1] Processing 32/25000: ILSVRC2012_test_00096942.JPEG
+2025-03-03 11:11:17,421 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.42, patchAcc=0.62) | Time=1.28s
+2025-03-03 11:11:17,422 [INFO] [Rank=2] Processing 32/25000: ILSVRC2012_test_00098203.JPEG
+2025-03-03 11:11:17,813 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.75, patchAcc=0.84) | Time=1.31s
+2025-03-03 11:11:17,814 [INFO] [Rank=0] Processing 33/25000: ILSVRC2012_test_00097205.JPEG
+2025-03-03 11:11:18,164 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.69, patchAcc=0.84) | Time=1.28s
+2025-03-03 11:11:18,165 [INFO] [Rank=1] Processing 33/25000: ILSVRC2012_test_00096946.JPEG
+2025-03-03 11:11:18,692 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.41, patchAcc=0.61) | Time=1.27s
+2025-03-03 11:11:18,693 [INFO] [Rank=2] Processing 33/25000: ILSVRC2012_test_00098207.JPEG
+2025-03-03 11:11:19,074 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.76, patchAcc=0.84) | Time=1.26s
+2025-03-03 11:11:19,075 [INFO] [Rank=0] Processing 34/25000: ILSVRC2012_test_00097209.JPEG
+2025-03-03 11:11:19,665 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.70, patchAcc=0.85) | Time=1.50s
+2025-03-03 11:11:19,666 [INFO] [Rank=1] Processing 34/25000: ILSVRC2012_test_00096950.JPEG
+2025-03-03 11:11:19,984 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.42, patchAcc=0.63) | Time=1.29s
+2025-03-03 11:11:19,985 [INFO] [Rank=2] Processing 34/25000: ILSVRC2012_test_00098211.JPEG
+2025-03-03 11:11:20,357 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.56 (Running puzzleAcc=0.74, patchAcc=0.83) | Time=1.28s
+2025-03-03 11:11:20,358 [INFO] [Rank=0] Processing 35/25000: ILSVRC2012_test_00097213.JPEG
+2025-03-03 11:11:20,918 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.71, patchAcc=0.85) | Time=1.25s
+2025-03-03 11:11:20,919 [INFO] [Rank=1] Processing 35/25000: ILSVRC2012_test_00096954.JPEG
+2025-03-03 11:11:21,271 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.44, patchAcc=0.64) | Time=1.29s
+2025-03-03 11:11:21,272 [INFO] [Rank=2] Processing 35/25000: ILSVRC2012_test_00098215.JPEG
+2025-03-03 11:11:21,606 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.74, patchAcc=0.84) | Time=1.25s
+2025-03-03 11:11:21,607 [INFO] [Rank=0] Processing 36/25000: ILSVRC2012_test_00097217.JPEG
+2025-03-03 11:11:22,179 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.71, patchAcc=0.85) | Time=1.26s
+2025-03-03 11:11:22,180 [INFO] [Rank=1] Processing 36/25000: ILSVRC2012_test_00096958.JPEG
+2025-03-03 11:11:22,536 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.43, patchAcc=0.62) | Time=1.26s
+2025-03-03 11:11:22,537 [INFO] [Rank=2] Processing 36/25000: ILSVRC2012_test_00098219.JPEG
+2025-03-03 11:11:22,870 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.75, patchAcc=0.84) | Time=1.26s
+2025-03-03 11:11:22,871 [INFO] [Rank=0] Processing 37/25000: ILSVRC2012_test_00097221.JPEG
+2025-03-03 11:11:23,446 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.69, patchAcc=0.83) | Time=1.27s
+2025-03-03 11:11:23,447 [INFO] [Rank=1] Processing 37/25000: ILSVRC2012_test_00096962.JPEG
+2025-03-03 11:11:23,816 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.42, patchAcc=0.61) | Time=1.28s
+2025-03-03 11:11:23,816 [INFO] [Rank=2] Processing 37/25000: ILSVRC2012_test_00098223.JPEG
+2025-03-03 11:11:24,127 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.56 (Running puzzleAcc=0.73, patchAcc=0.83) | Time=1.26s
+2025-03-03 11:11:24,128 [INFO] [Rank=0] Processing 38/25000: ILSVRC2012_test_00097225.JPEG
+2025-03-03 11:11:24,714 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.70, patchAcc=0.83) | Time=1.27s
+2025-03-03 11:11:24,715 [INFO] [Rank=1] Processing 38/25000: ILSVRC2012_test_00096966.JPEG
+2025-03-03 11:11:25,093 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.41, patchAcc=0.62) | Time=1.28s
+2025-03-03 11:11:25,094 [INFO] [Rank=2] Processing 38/25000: ILSVRC2012_test_00098227.JPEG
+2025-03-03 11:11:25,382 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.74, patchAcc=0.84) | Time=1.25s
+2025-03-03 11:11:25,383 [INFO] [Rank=0] Processing 39/25000: ILSVRC2012_test_00097229.JPEG
+2025-03-03 11:11:25,972 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.71, patchAcc=0.84) | Time=1.26s
+2025-03-03 11:11:25,973 [INFO] [Rank=1] Processing 39/25000: ILSVRC2012_test_00096970.JPEG
+2025-03-03 11:11:26,343 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.42, patchAcc=0.63) | Time=1.25s
+2025-03-03 11:11:26,344 [INFO] [Rank=2] Processing 39/25000: ILSVRC2012_test_00098231.JPEG
+2025-03-03 11:11:26,654 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.74, patchAcc=0.84) | Time=1.27s
+2025-03-03 11:11:26,655 [INFO] [Rank=0] Processing 40/25000: ILSVRC2012_test_00097233.JPEG
+2025-03-03 11:11:27,242 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.72, patchAcc=0.84) | Time=1.27s
+2025-03-03 11:11:27,243 [INFO] [Rank=1] Processing 40/25000: ILSVRC2012_test_00096974.JPEG
+2025-03-03 11:11:27,618 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.44, patchAcc=0.64) | Time=1.27s
+2025-03-03 11:11:27,619 [INFO] [Rank=2] Processing 40/25000: ILSVRC2012_test_00098235.JPEG
+2025-03-03 11:11:27,907 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.72, patchAcc=0.84) | Time=1.25s
+2025-03-03 11:11:27,908 [INFO] [Rank=0] Processing 41/25000: ILSVRC2012_test_00097237.JPEG
+2025-03-03 11:11:28,528 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.72, patchAcc=0.85) | Time=1.28s
+2025-03-03 11:11:28,529 [INFO] [Rank=1] Processing 41/25000: ILSVRC2012_test_00096978.JPEG
+2025-03-03 11:11:28,889 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.45, patchAcc=0.64) | Time=1.27s
+2025-03-03 11:11:28,890 [INFO] [Rank=2] Processing 41/25000: ILSVRC2012_test_00098239.JPEG
+2025-03-03 11:11:29,173 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.11 (Running puzzleAcc=0.71, patchAcc=0.82) | Time=1.26s
+2025-03-03 11:11:29,174 [INFO] [Rank=0] Processing 42/25000: ILSVRC2012_test_00097241.JPEG
+2025-03-03 11:11:29,780 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.71, patchAcc=0.85) | Time=1.25s
+2025-03-03 11:11:29,781 [INFO] [Rank=1] Processing 42/25000: ILSVRC2012_test_00096982.JPEG
+2025-03-03 11:11:30,167 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.46, patchAcc=0.65) | Time=1.28s
+2025-03-03 11:11:30,169 [INFO] [Rank=2] Processing 42/25000: ILSVRC2012_test_00098243.JPEG
+2025-03-03 11:11:30,451 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.71, patchAcc=0.83) | Time=1.28s
+2025-03-03 11:11:30,452 [INFO] [Rank=0] Processing 43/25000: ILSVRC2012_test_00097245.JPEG
+2025-03-03 11:11:31,039 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.71, patchAcc=0.85) | Time=1.26s
+2025-03-03 11:11:31,040 [INFO] [Rank=1] Processing 43/25000: ILSVRC2012_test_00096986.JPEG
+2025-03-03 11:11:31,439 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.48, patchAcc=0.66) | Time=1.27s
+2025-03-03 11:11:31,440 [INFO] [Rank=2] Processing 43/25000: ILSVRC2012_test_00098247.JPEG
+2025-03-03 11:11:31,716 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.70, patchAcc=0.82) | Time=1.26s
+2025-03-03 11:11:31,717 [INFO] [Rank=0] Processing 44/25000: ILSVRC2012_test_00097249.JPEG
+2025-03-03 11:11:32,291 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.70, patchAcc=0.84) | Time=1.25s
+2025-03-03 11:11:32,291 [INFO] [Rank=1] Processing 44/25000: ILSVRC2012_test_00096990.JPEG
+2025-03-03 11:11:32,719 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.47, patchAcc=0.65) | Time=1.28s
+2025-03-03 11:11:32,720 [INFO] [Rank=2] Processing 44/25000: ILSVRC2012_test_00098251.JPEG
+2025-03-03 11:11:32,988 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.11 (Running puzzleAcc=0.68, patchAcc=0.80) | Time=1.27s
+2025-03-03 11:11:32,989 [INFO] [Rank=0] Processing 45/25000: ILSVRC2012_test_00097253.JPEG
+2025-03-03 11:11:33,537 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.70, patchAcc=0.84) | Time=1.25s
+2025-03-03 11:11:33,538 [INFO] [Rank=1] Processing 45/25000: ILSVRC2012_test_00096994.JPEG
+2025-03-03 11:11:33,992 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.48, patchAcc=0.65) | Time=1.27s
+2025-03-03 11:11:33,993 [INFO] [Rank=2] Processing 45/25000: ILSVRC2012_test_00098255.JPEG
+2025-03-03 11:11:34,267 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.67, patchAcc=0.78) | Time=1.28s
+2025-03-03 11:11:34,268 [INFO] [Rank=0] Processing 46/25000: ILSVRC2012_test_00097257.JPEG
+2025-03-03 11:11:34,829 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.71, patchAcc=0.84) | Time=1.29s
+2025-03-03 11:11:34,829 [INFO] [Rank=1] Processing 46/25000: ILSVRC2012_test_00096998.JPEG
+2025-03-03 11:11:35,259 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.49, patchAcc=0.66) | Time=1.27s
+2025-03-03 11:11:35,260 [INFO] [Rank=2] Processing 46/25000: ILSVRC2012_test_00098259.JPEG
+2025-03-03 11:11:35,543 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.67, patchAcc=0.79) | Time=1.28s
+2025-03-03 11:11:35,544 [INFO] [Rank=0] Processing 47/25000: ILSVRC2012_test_00097261.JPEG
+2025-03-03 11:11:36,081 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.70, patchAcc=0.83) | Time=1.25s
+2025-03-03 11:11:36,082 [INFO] [Rank=1] Processing 47/25000: ILSVRC2012_test_00097002.JPEG
+2025-03-03 11:11:36,537 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.50, patchAcc=0.67) | Time=1.28s
+2025-03-03 11:11:36,538 [INFO] [Rank=2] Processing 47/25000: ILSVRC2012_test_00098263.JPEG
+2025-03-03 11:11:36,789 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.68, patchAcc=0.79) | Time=1.24s
+2025-03-03 11:11:36,789 [INFO] [Rank=0] Processing 48/25000: ILSVRC2012_test_00097265.JPEG
+2025-03-03 11:11:37,393 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.70, patchAcc=0.83) | Time=1.31s
+2025-03-03 11:11:37,394 [INFO] [Rank=1] Processing 48/25000: ILSVRC2012_test_00097006.JPEG
+2025-03-03 11:11:37,813 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.51, patchAcc=0.68) | Time=1.28s
+2025-03-03 11:11:37,814 [INFO] [Rank=2] Processing 48/25000: ILSVRC2012_test_00098267.JPEG
+2025-03-03 11:11:38,042 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.69, patchAcc=0.80) | Time=1.25s
+2025-03-03 11:11:38,043 [INFO] [Rank=0] Processing 49/25000: ILSVRC2012_test_00097269.JPEG
+2025-03-03 11:11:38,651 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.22 (Running puzzleAcc=0.69, patchAcc=0.82) | Time=1.26s
+2025-03-03 11:11:38,652 [INFO] [Rank=1] Processing 49/25000: ILSVRC2012_test_00097010.JPEG
+2025-03-03 11:11:39,120 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.52, patchAcc=0.68) | Time=1.31s
+2025-03-03 11:11:39,121 [INFO] [Rank=2] Processing 49/25000: ILSVRC2012_test_00098271.JPEG
+2025-03-03 11:11:39,354 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.69, patchAcc=0.80) | Time=1.31s
+2025-03-03 11:11:39,355 [INFO] [Rank=0] Processing 50/25000: ILSVRC2012_test_00097273.JPEG
+2025-03-03 11:11:40,051 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.67, patchAcc=0.80) | Time=1.40s
+2025-03-03 11:11:40,052 [INFO] [Rank=1] Processing 50/25000: ILSVRC2012_test_00097014.JPEG
+2025-03-03 11:11:40,395 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.53, patchAcc=0.69) | Time=1.27s
+2025-03-03 11:11:40,396 [INFO] [Rank=2] Processing 50/25000: ILSVRC2012_test_00098275.JPEG
+2025-03-03 11:11:40,610 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.56 (Running puzzleAcc=0.68, patchAcc=0.80) | Time=1.26s
+2025-03-03 11:11:40,611 [INFO] [Rank=0] Processing 51/25000: ILSVRC2012_test_00097277.JPEG
+2025-03-03 11:11:41,314 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.68, patchAcc=0.80) | Time=1.26s
+2025-03-03 11:11:41,315 [INFO] [Rank=1] Processing 51/25000: ILSVRC2012_test_00097018.JPEG
+2025-03-03 11:11:41,674 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.54, patchAcc=0.70) | Time=1.28s
+2025-03-03 11:11:41,675 [INFO] [Rank=2] Processing 51/25000: ILSVRC2012_test_00098279.JPEG
+2025-03-03 11:11:41,900 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.69, patchAcc=0.80) | Time=1.29s
+2025-03-03 11:11:41,901 [INFO] [Rank=0] Processing 52/25000: ILSVRC2012_test_00097281.JPEG
+2025-03-03 11:11:42,583 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.67, patchAcc=0.80) | Time=1.27s
+2025-03-03 11:11:42,584 [INFO] [Rank=1] Processing 52/25000: ILSVRC2012_test_00097022.JPEG
+2025-03-03 11:11:42,965 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.53, patchAcc=0.70) | Time=1.29s
+2025-03-03 11:11:42,965 [INFO] [Rank=2] Processing 52/25000: ILSVRC2012_test_00098283.JPEG
+2025-03-03 11:11:43,180 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.69, patchAcc=0.80) | Time=1.28s
+2025-03-03 11:11:43,181 [INFO] [Rank=0] Processing 53/25000: ILSVRC2012_test_00097285.JPEG
+2025-03-03 11:11:43,847 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.67 (Running puzzleAcc=0.65, patchAcc=0.80) | Time=1.26s
+2025-03-03 11:11:43,848 [INFO] [Rank=1] Processing 53/25000: ILSVRC2012_test_00097026.JPEG
+2025-03-03 11:11:44,268 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.67 (Running puzzleAcc=0.52, patchAcc=0.70) | Time=1.30s
+2025-03-03 11:11:44,269 [INFO] [Rank=2] Processing 53/25000: ILSVRC2012_test_00098287.JPEG
+2025-03-03 11:11:44,479 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.68, patchAcc=0.79) | Time=1.30s
+2025-03-03 11:11:44,480 [INFO] [Rank=0] Processing 54/25000: ILSVRC2012_test_00097289.JPEG
+2025-03-03 11:11:45,248 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.66, patchAcc=0.81) | Time=1.40s
+2025-03-03 11:11:45,249 [INFO] [Rank=1] Processing 54/25000: ILSVRC2012_test_00097030.JPEG
+2025-03-03 11:11:45,550 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.53, patchAcc=0.70) | Time=1.28s
+2025-03-03 11:11:45,551 [INFO] [Rank=2] Processing 54/25000: ILSVRC2012_test_00098291.JPEG
+2025-03-03 11:11:45,756 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.69, patchAcc=0.80) | Time=1.28s
+2025-03-03 11:11:45,757 [INFO] [Rank=0] Processing 55/25000: ILSVRC2012_test_00097293.JPEG
+2025-03-03 11:11:46,510 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.67, patchAcc=0.81) | Time=1.26s
+2025-03-03 11:11:46,511 [INFO] [Rank=1] Processing 55/25000: ILSVRC2012_test_00097034.JPEG
+2025-03-03 11:11:46,835 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.54, patchAcc=0.71) | Time=1.28s
+2025-03-03 11:11:46,836 [INFO] [Rank=2] Processing 55/25000: ILSVRC2012_test_00098295.JPEG
+2025-03-03 11:11:47,033 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.69, patchAcc=0.80) | Time=1.28s
+2025-03-03 11:11:47,034 [INFO] [Rank=0] Processing 56/25000: ILSVRC2012_test_00097297.JPEG
+2025-03-03 11:11:47,789 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.65, patchAcc=0.79) | Time=1.28s
+2025-03-03 11:11:47,790 [INFO] [Rank=1] Processing 56/25000: ILSVRC2012_test_00097038.JPEG
+2025-03-03 11:11:48,142 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.55, patchAcc=0.71) | Time=1.31s
+2025-03-03 11:11:48,143 [INFO] [Rank=2] Processing 56/25000: ILSVRC2012_test_00098299.JPEG
+2025-03-03 11:11:48,303 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.70, patchAcc=0.81) | Time=1.27s
+2025-03-03 11:11:48,304 [INFO] [Rank=0] Processing 57/25000: ILSVRC2012_test_00097301.JPEG
+2025-03-03 11:11:49,066 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.66, patchAcc=0.80) | Time=1.28s
+2025-03-03 11:11:49,067 [INFO] [Rank=1] Processing 57/25000: ILSVRC2012_test_00097042.JPEG
+2025-03-03 11:11:49,415 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.55, patchAcc=0.72) | Time=1.27s
+2025-03-03 11:11:49,416 [INFO] [Rank=2] Processing 57/25000: ILSVRC2012_test_00098303.JPEG
+2025-03-03 11:11:49,586 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.70, patchAcc=0.81) | Time=1.28s
+2025-03-03 11:11:49,587 [INFO] [Rank=0] Processing 58/25000: ILSVRC2012_test_00097305.JPEG
+2025-03-03 11:11:50,308 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.44 (Running puzzleAcc=0.65, patchAcc=0.79) | Time=1.24s
+2025-03-03 11:11:50,309 [INFO] [Rank=1] Processing 58/25000: ILSVRC2012_test_00097046.JPEG
+2025-03-03 11:11:50,701 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.56, patchAcc=0.72) | Time=1.28s
+2025-03-03 11:11:50,701 [INFO] [Rank=2] Processing 58/25000: ILSVRC2012_test_00098307.JPEG
+2025-03-03 11:11:50,856 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.11 (Running puzzleAcc=0.69, patchAcc=0.80) | Time=1.27s
+2025-03-03 11:11:50,857 [INFO] [Rank=0] Processing 59/25000: ILSVRC2012_test_00097309.JPEG
+2025-03-03 11:11:51,717 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.64, patchAcc=0.78) | Time=1.41s
+2025-03-03 11:11:51,718 [INFO] [Rank=1] Processing 59/25000: ILSVRC2012_test_00097050.JPEG
+2025-03-03 11:11:51,990 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.57, patchAcc=0.73) | Time=1.29s
+2025-03-03 11:11:51,991 [INFO] [Rank=2] Processing 59/25000: ILSVRC2012_test_00098311.JPEG
+2025-03-03 11:11:52,127 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.69, patchAcc=0.80) | Time=1.27s
+2025-03-03 11:11:52,128 [INFO] [Rank=0] Processing 60/25000: ILSVRC2012_test_00097313.JPEG
+2025-03-03 11:11:52,978 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.79) | Time=1.26s
+2025-03-03 11:11:52,979 [INFO] [Rank=1] Processing 60/25000: ILSVRC2012_test_00097054.JPEG
+2025-03-03 11:11:53,298 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.56 (Running puzzleAcc=0.56, patchAcc=0.73) | Time=1.31s
+2025-03-03 11:11:53,299 [INFO] [Rank=2] Processing 60/25000: ILSVRC2012_test_00098315.JPEG
+2025-03-03 11:11:53,396 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.70, patchAcc=0.80) | Time=1.27s
+2025-03-03 11:11:53,397 [INFO] [Rank=0] Processing 61/25000: ILSVRC2012_test_00097317.JPEG
+2025-03-03 11:11:54,267 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.63, patchAcc=0.78) | Time=1.29s
+2025-03-03 11:11:54,268 [INFO] [Rank=1] Processing 61/25000: ILSVRC2012_test_00097058.JPEG
+2025-03-03 11:11:54,574 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.57, patchAcc=0.73) | Time=1.28s
+2025-03-03 11:11:54,575 [INFO] [Rank=2] Processing 61/25000: ILSVRC2012_test_00098319.JPEG
+2025-03-03 11:11:54,708 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.70, patchAcc=0.81) | Time=1.31s
+2025-03-03 11:11:54,709 [INFO] [Rank=0] Processing 62/25000: ILSVRC2012_test_00097321.JPEG
+2025-03-03 11:11:55,526 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.78) | Time=1.26s
+2025-03-03 11:11:55,527 [INFO] [Rank=1] Processing 62/25000: ILSVRC2012_test_00097062.JPEG
+2025-03-03 11:11:55,854 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.57, patchAcc=0.73) | Time=1.28s
+2025-03-03 11:11:55,855 [INFO] [Rank=2] Processing 62/25000: ILSVRC2012_test_00098323.JPEG
+2025-03-03 11:11:56,037 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.71, patchAcc=0.81) | Time=1.33s
+2025-03-03 11:11:56,038 [INFO] [Rank=0] Processing 63/25000: ILSVRC2012_test_00097325.JPEG
+2025-03-03 11:11:56,772 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.79) | Time=1.24s
+2025-03-03 11:11:56,773 [INFO] [Rank=1] Processing 63/25000: ILSVRC2012_test_00097066.JPEG
+2025-03-03 11:11:57,139 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.58, patchAcc=0.74) | Time=1.28s
+2025-03-03 11:11:57,140 [INFO] [Rank=2] Processing 63/25000: ILSVRC2012_test_00098327.JPEG
+2025-03-03 11:11:57,335 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.71, patchAcc=0.81) | Time=1.30s
+2025-03-03 11:11:57,336 [INFO] [Rank=0] Processing 64/25000: ILSVRC2012_test_00097329.JPEG
+2025-03-03 11:11:58,028 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.79) | Time=1.26s
+2025-03-03 11:11:58,029 [INFO] [Rank=1] Processing 64/25000: ILSVRC2012_test_00097070.JPEG
+2025-03-03 11:11:58,445 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.59, patchAcc=0.74) | Time=1.30s
+2025-03-03 11:11:58,446 [INFO] [Rank=2] Processing 64/25000: ILSVRC2012_test_00098331.JPEG
+2025-03-03 11:11:58,605 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.72, patchAcc=0.82) | Time=1.27s
+2025-03-03 11:11:58,606 [INFO] [Rank=0] Processing 65/25000: ILSVRC2012_test_00097333.JPEG
+2025-03-03 11:11:59,284 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.66, patchAcc=0.79) | Time=1.25s
+2025-03-03 11:11:59,285 [INFO] [Rank=1] Processing 65/25000: ILSVRC2012_test_00097074.JPEG
+2025-03-03 11:11:59,706 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.59, patchAcc=0.75) | Time=1.26s
+2025-03-03 11:11:59,707 [INFO] [Rank=2] Processing 65/25000: ILSVRC2012_test_00098335.JPEG
+2025-03-03 11:11:59,882 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.72, patchAcc=0.82) | Time=1.28s
+2025-03-03 11:11:59,883 [INFO] [Rank=0] Processing 66/25000: ILSVRC2012_test_00097337.JPEG
+2025-03-03 11:12:00,596 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.66, patchAcc=0.80) | Time=1.31s
+2025-03-03 11:12:00,597 [INFO] [Rank=1] Processing 66/25000: ILSVRC2012_test_00097078.JPEG
+2025-03-03 11:12:00,987 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.60, patchAcc=0.75) | Time=1.28s
+2025-03-03 11:12:00,988 [INFO] [Rank=2] Processing 66/25000: ILSVRC2012_test_00098339.JPEG
+2025-03-03 11:12:01,155 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.73, patchAcc=0.82) | Time=1.27s
+2025-03-03 11:12:01,156 [INFO] [Rank=0] Processing 67/25000: ILSVRC2012_test_00097341.JPEG
+2025-03-03 11:12:01,860 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.67, patchAcc=0.80) | Time=1.26s
+2025-03-03 11:12:01,861 [INFO] [Rank=1] Processing 67/25000: ILSVRC2012_test_00097082.JPEG
+2025-03-03 11:12:02,270 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.61, patchAcc=0.75) | Time=1.28s
+2025-03-03 11:12:02,271 [INFO] [Rank=2] Processing 67/25000: ILSVRC2012_test_00098343.JPEG
+2025-03-03 11:12:02,443 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.73, patchAcc=0.82) | Time=1.29s
+2025-03-03 11:12:02,444 [INFO] [Rank=0] Processing 68/25000: ILSVRC2012_test_00097345.JPEG
+2025-03-03 11:12:03,111 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.67, patchAcc=0.80) | Time=1.25s
+2025-03-03 11:12:03,112 [INFO] [Rank=1] Processing 68/25000: ILSVRC2012_test_00097086.JPEG
+2025-03-03 11:12:03,532 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.61, patchAcc=0.76) | Time=1.26s
+2025-03-03 11:12:03,533 [INFO] [Rank=2] Processing 68/25000: ILSVRC2012_test_00098347.JPEG
+2025-03-03 11:12:03,752 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.74, patchAcc=0.83) | Time=1.31s
+2025-03-03 11:12:03,753 [INFO] [Rank=0] Processing 69/25000: ILSVRC2012_test_00097349.JPEG
+2025-03-03 11:12:04,373 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.44 (Running puzzleAcc=0.66, patchAcc=0.80) | Time=1.26s
+2025-03-03 11:12:04,374 [INFO] [Rank=1] Processing 69/25000: ILSVRC2012_test_00097090.JPEG
+2025-03-03 11:12:04,817 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.56 (Running puzzleAcc=0.60, patchAcc=0.75) | Time=1.28s
+2025-03-03 11:12:04,818 [INFO] [Rank=2] Processing 69/25000: ILSVRC2012_test_00098351.JPEG
+2025-03-03 11:12:05,053 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.74, patchAcc=0.83) | Time=1.30s
+2025-03-03 11:12:05,054 [INFO] [Rank=0] Processing 70/25000: ILSVRC2012_test_00097353.JPEG
+2025-03-03 11:12:05,644 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.67, patchAcc=0.80) | Time=1.27s
+2025-03-03 11:12:05,645 [INFO] [Rank=1] Processing 70/25000: ILSVRC2012_test_00097094.JPEG
+2025-03-03 11:12:06,119 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.61, patchAcc=0.76) | Time=1.30s
+2025-03-03 11:12:06,120 [INFO] [Rank=2] Processing 70/25000: ILSVRC2012_test_00098355.JPEG
+2025-03-03 11:12:06,312 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.74, patchAcc=0.83) | Time=1.26s
+2025-03-03 11:12:06,313 [INFO] [Rank=0] Processing 71/25000: ILSVRC2012_test_00097357.JPEG
+2025-03-03 11:12:06,907 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.44 (Running puzzleAcc=0.66, patchAcc=0.80) | Time=1.26s
+2025-03-03 11:12:06,908 [INFO] [Rank=1] Processing 71/25000: ILSVRC2012_test_00097098.JPEG
+2025-03-03 11:12:07,392 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.61, patchAcc=0.76) | Time=1.27s
+2025-03-03 11:12:07,393 [INFO] [Rank=2] Processing 71/25000: ILSVRC2012_test_00098359.JPEG
+2025-03-03 11:12:07,586 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.75, patchAcc=0.83) | Time=1.27s
+2025-03-03 11:12:07,587 [INFO] [Rank=0] Processing 72/25000: ILSVRC2012_test_00097361.JPEG
+2025-03-03 11:12:08,167 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.66, patchAcc=0.80) | Time=1.26s
+2025-03-03 11:12:08,167 [INFO] [Rank=1] Processing 72/25000: ILSVRC2012_test_00097102.JPEG
+2025-03-03 11:12:08,660 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.62, patchAcc=0.77) | Time=1.27s
+2025-03-03 11:12:08,661 [INFO] [Rank=2] Processing 72/25000: ILSVRC2012_test_00098363.JPEG
+2025-03-03 11:12:08,854 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.75, patchAcc=0.84) | Time=1.27s
+2025-03-03 11:12:08,855 [INFO] [Rank=0] Processing 73/25000: ILSVRC2012_test_00097365.JPEG
+2025-03-03 11:12:09,426 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.67, patchAcc=0.80) | Time=1.26s
+2025-03-03 11:12:09,427 [INFO] [Rank=1] Processing 73/25000: ILSVRC2012_test_00097106.JPEG
+2025-03-03 11:12:09,950 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.62, patchAcc=0.77) | Time=1.29s
+2025-03-03 11:12:09,951 [INFO] [Rank=2] Processing 73/25000: ILSVRC2012_test_00098367.JPEG
+2025-03-03 11:12:10,113 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.75, patchAcc=0.84) | Time=1.26s
+2025-03-03 11:12:10,114 [INFO] [Rank=0] Processing 74/25000: ILSVRC2012_test_00097369.JPEG
+2025-03-03 11:12:10,678 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.44 (Running puzzleAcc=0.66, patchAcc=0.80) | Time=1.25s
+2025-03-03 11:12:10,679 [INFO] [Rank=1] Processing 74/25000: ILSVRC2012_test_00097110.JPEG
+2025-03-03 11:12:11,258 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.63, patchAcc=0.77) | Time=1.31s
+2025-03-03 11:12:11,259 [INFO] [Rank=2] Processing 74/25000: ILSVRC2012_test_00098371.JPEG
+2025-03-03 11:12:11,374 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.76, patchAcc=0.84) | Time=1.26s
+2025-03-03 11:12:11,375 [INFO] [Rank=0] Processing 75/25000: ILSVRC2012_test_00097373.JPEG
+2025-03-03 11:12:11,930 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.56 (Running puzzleAcc=0.65, patchAcc=0.79) | Time=1.25s
+2025-03-03 11:12:11,930 [INFO] [Rank=1] Processing 75/25000: ILSVRC2012_test_00097114.JPEG
+2025-03-03 11:12:12,540 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.62, patchAcc=0.77) | Time=1.28s
+2025-03-03 11:12:12,541 [INFO] [Rank=2] Processing 75/25000: ILSVRC2012_test_00098375.JPEG
+2025-03-03 11:12:12,658 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.76, patchAcc=0.84) | Time=1.28s
+2025-03-03 11:12:12,659 [INFO] [Rank=0] Processing 76/25000: ILSVRC2012_test_00097377.JPEG
+2025-03-03 11:12:13,213 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.80) | Time=1.28s
+2025-03-03 11:12:13,214 [INFO] [Rank=1] Processing 76/25000: ILSVRC2012_test_00097118.JPEG
+2025-03-03 11:12:13,809 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.61, patchAcc=0.76) | Time=1.27s
+2025-03-03 11:12:13,810 [INFO] [Rank=2] Processing 76/25000: ILSVRC2012_test_00098379.JPEG
+2025-03-03 11:12:13,952 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.76, patchAcc=0.85) | Time=1.29s
+2025-03-03 11:12:13,953 [INFO] [Rank=0] Processing 77/25000: ILSVRC2012_test_00097381.JPEG
+2025-03-03 11:12:14,464 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.66, patchAcc=0.80) | Time=1.25s
+2025-03-03 11:12:14,465 [INFO] [Rank=1] Processing 77/25000: ILSVRC2012_test_00097122.JPEG
+2025-03-03 11:12:15,104 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.62, patchAcc=0.76) | Time=1.29s
+2025-03-03 11:12:15,105 [INFO] [Rank=2] Processing 77/25000: ILSVRC2012_test_00098383.JPEG
+2025-03-03 11:12:15,236 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.77, patchAcc=0.85) | Time=1.28s
+2025-03-03 11:12:15,237 [INFO] [Rank=0] Processing 78/25000: ILSVRC2012_test_00097385.JPEG
+2025-03-03 11:12:15,723 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.65, patchAcc=0.80) | Time=1.26s
+2025-03-03 11:12:15,724 [INFO] [Rank=1] Processing 78/25000: ILSVRC2012_test_00097126.JPEG
+2025-03-03 11:12:16,389 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.62, patchAcc=0.76) | Time=1.28s
+2025-03-03 11:12:16,390 [INFO] [Rank=2] Processing 78/25000: ILSVRC2012_test_00098387.JPEG
+2025-03-03 11:12:16,523 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.77, patchAcc=0.85) | Time=1.29s
+2025-03-03 11:12:16,524 [INFO] [Rank=0] Processing 79/25000: ILSVRC2012_test_00097389.JPEG
+2025-03-03 11:12:16,993 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.67 (Running puzzleAcc=0.64, patchAcc=0.80) | Time=1.27s
+2025-03-03 11:12:16,994 [INFO] [Rank=1] Processing 79/25000: ILSVRC2012_test_00097130.JPEG
+2025-03-03 11:12:17,668 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.62, patchAcc=0.76) | Time=1.28s
+2025-03-03 11:12:17,669 [INFO] [Rank=2] Processing 79/25000: ILSVRC2012_test_00098391.JPEG
+2025-03-03 11:12:17,788 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.67 (Running puzzleAcc=0.76, patchAcc=0.85) | Time=1.26s
+2025-03-03 11:12:17,789 [INFO] [Rank=0] Processing 80/25000: ILSVRC2012_test_00097393.JPEG
+2025-03-03 11:12:18,236 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.80) | Time=1.24s
+2025-03-03 11:12:18,237 [INFO] [Rank=1] Processing 80/25000: ILSVRC2012_test_00097134.JPEG
+2025-03-03 11:12:18,969 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.61, patchAcc=0.75) | Time=1.30s
+2025-03-03 11:12:18,970 [INFO] [Rank=2] Processing 80/25000: ILSVRC2012_test_00098395.JPEG
+2025-03-03 11:12:19,057 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.76, patchAcc=0.85) | Time=1.27s
+2025-03-03 11:12:19,058 [INFO] [Rank=0] Processing 81/25000: ILSVRC2012_test_00097397.JPEG
+2025-03-03 11:12:19,597 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.80) | Time=1.36s
+2025-03-03 11:12:19,597 [INFO] [Rank=1] Processing 81/25000: ILSVRC2012_test_00097138.JPEG
+2025-03-03 11:12:20,237 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.61, patchAcc=0.75) | Time=1.27s
+2025-03-03 11:12:20,237 [INFO] [Rank=2] Processing 81/25000: ILSVRC2012_test_00098399.JPEG
+2025-03-03 11:12:20,326 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.77, patchAcc=0.85) | Time=1.27s
+2025-03-03 11:12:20,327 [INFO] [Rank=0] Processing 82/25000: ILSVRC2012_test_00097401.JPEG
+2025-03-03 11:12:20,870 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.56 (Running puzzleAcc=0.64, patchAcc=0.80) | Time=1.27s
+2025-03-03 11:12:20,871 [INFO] [Rank=1] Processing 82/25000: ILSVRC2012_test_00097142.JPEG
+2025-03-03 11:12:21,511 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.62, patchAcc=0.75) | Time=1.27s
+2025-03-03 11:12:21,512 [INFO] [Rank=2] Processing 82/25000: ILSVRC2012_test_00098403.JPEG
+2025-03-03 11:12:21,586 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.77, patchAcc=0.85) | Time=1.26s
+2025-03-03 11:12:21,587 [INFO] [Rank=0] Processing 83/25000: ILSVRC2012_test_00097405.JPEG
+2025-03-03 11:12:22,128 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.80) | Time=1.26s
+2025-03-03 11:12:22,129 [INFO] [Rank=1] Processing 83/25000: ILSVRC2012_test_00097146.JPEG
+2025-03-03 11:12:22,789 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.61, patchAcc=0.75) | Time=1.28s
+2025-03-03 11:12:22,790 [INFO] [Rank=2] Processing 83/25000: ILSVRC2012_test_00098407.JPEG
+2025-03-03 11:12:22,874 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.77, patchAcc=0.85) | Time=1.29s
+2025-03-03 11:12:22,875 [INFO] [Rank=0] Processing 84/25000: ILSVRC2012_test_00097409.JPEG
+2025-03-03 11:12:23,387 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.80) | Time=1.26s
+2025-03-03 11:12:23,388 [INFO] [Rank=1] Processing 84/25000: ILSVRC2012_test_00097150.JPEG
+2025-03-03 11:12:24,060 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.61, patchAcc=0.76) | Time=1.27s
+2025-03-03 11:12:24,061 [INFO] [Rank=2] Processing 84/25000: ILSVRC2012_test_00098411.JPEG
+2025-03-03 11:12:24,166 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.77, patchAcc=0.86) | Time=1.29s
+2025-03-03 11:12:24,166 [INFO] [Rank=0] Processing 85/25000: ILSVRC2012_test_00097413.JPEG
+2025-03-03 11:12:24,657 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.81) | Time=1.27s
+2025-03-03 11:12:24,658 [INFO] [Rank=1] Processing 85/25000: ILSVRC2012_test_00097154.JPEG
+2025-03-03 11:12:25,326 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.22 (Running puzzleAcc=0.61, patchAcc=0.75) | Time=1.27s
+2025-03-03 11:12:25,327 [INFO] [Rank=2] Processing 85/25000: ILSVRC2012_test_00098415.JPEG
+2025-03-03 11:12:25,436 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.78, patchAcc=0.86) | Time=1.27s
+2025-03-03 11:12:25,437 [INFO] [Rank=0] Processing 86/25000: ILSVRC2012_test_00097417.JPEG
+2025-03-03 11:12:25,897 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.66, patchAcc=0.81) | Time=1.24s
+2025-03-03 11:12:25,898 [INFO] [Rank=1] Processing 86/25000: ILSVRC2012_test_00097158.JPEG
+2025-03-03 11:12:26,620 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.60, patchAcc=0.75) | Time=1.29s
+2025-03-03 11:12:26,621 [INFO] [Rank=2] Processing 86/25000: ILSVRC2012_test_00098419.JPEG
+2025-03-03 11:12:26,703 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.78, patchAcc=0.86) | Time=1.27s
+2025-03-03 11:12:26,704 [INFO] [Rank=0] Processing 87/25000: ILSVRC2012_test_00097421.JPEG
+2025-03-03 11:12:27,150 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.66, patchAcc=0.81) | Time=1.25s
+2025-03-03 11:12:27,151 [INFO] [Rank=1] Processing 87/25000: ILSVRC2012_test_00097162.JPEG
+2025-03-03 11:12:27,923 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.60, patchAcc=0.75) | Time=1.30s
+2025-03-03 11:12:27,924 [INFO] [Rank=2] Processing 87/25000: ILSVRC2012_test_00098423.JPEG
+2025-03-03 11:12:28,021 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.78, patchAcc=0.86) | Time=1.32s
+2025-03-03 11:12:28,021 [INFO] [Rank=0] Processing 88/25000: ILSVRC2012_test_00097425.JPEG
+2025-03-03 11:12:28,413 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.67, patchAcc=0.81) | Time=1.26s
+2025-03-03 11:12:28,413 [INFO] [Rank=1] Processing 88/25000: ILSVRC2012_test_00097166.JPEG
+2025-03-03 11:12:29,219 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.61, patchAcc=0.75) | Time=1.29s
+2025-03-03 11:12:29,220 [INFO] [Rank=2] Processing 88/25000: ILSVRC2012_test_00098427.JPEG
+2025-03-03 11:12:29,326 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.78, patchAcc=0.86) | Time=1.30s
+2025-03-03 11:12:29,327 [INFO] [Rank=0] Processing 89/25000: ILSVRC2012_test_00097429.JPEG
+2025-03-03 11:12:29,710 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.67, patchAcc=0.81) | Time=1.30s
+2025-03-03 11:12:29,711 [INFO] [Rank=1] Processing 89/25000: ILSVRC2012_test_00097170.JPEG
+2025-03-03 11:12:30,597 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.79, patchAcc=0.86) | Time=1.27s
+2025-03-03 11:12:30,598 [INFO] [Rank=0] Processing 90/25000: ILSVRC2012_test_00097433.JPEG
+2025-03-03 11:12:30,599 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.61, patchAcc=0.75) | Time=1.38s
+2025-03-03 11:12:30,600 [INFO] [Rank=2] Processing 89/25000: ILSVRC2012_test_00098431.JPEG
+2025-03-03 11:12:30,982 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.67, patchAcc=0.82) | Time=1.27s
+2025-03-03 11:12:30,983 [INFO] [Rank=1] Processing 90/25000: ILSVRC2012_test_00097174.JPEG
+2025-03-03 11:12:31,855 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.62, patchAcc=0.76) | Time=1.25s
+2025-03-03 11:12:31,855 [INFO] [Rank=2] Processing 90/25000: ILSVRC2012_test_00098435.JPEG
+2025-03-03 11:12:31,881 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.79, patchAcc=0.87) | Time=1.28s
+2025-03-03 11:12:31,881 [INFO] [Rank=0] Processing 91/25000: ILSVRC2012_test_00097437.JPEG
+2025-03-03 11:12:32,255 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.11 (Running puzzleAcc=0.67, patchAcc=0.81) | Time=1.27s
+2025-03-03 11:12:32,256 [INFO] [Rank=1] Processing 91/25000: ILSVRC2012_test_00097178.JPEG
+2025-03-03 11:12:33,116 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.62, patchAcc=0.76) | Time=1.26s
+2025-03-03 11:12:33,117 [INFO] [Rank=2] Processing 91/25000: ILSVRC2012_test_00098439.JPEG
+2025-03-03 11:12:33,142 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.79, patchAcc=0.87) | Time=1.26s
+2025-03-03 11:12:33,143 [INFO] [Rank=0] Processing 92/25000: ILSVRC2012_test_00097441.JPEG
+2025-03-03 11:12:33,534 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.67, patchAcc=0.81) | Time=1.28s
+2025-03-03 11:12:33,535 [INFO] [Rank=1] Processing 92/25000: ILSVRC2012_test_00097182.JPEG
+2025-03-03 11:12:34,394 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.63, patchAcc=0.76) | Time=1.28s
+2025-03-03 11:12:34,395 [INFO] [Rank=2] Processing 92/25000: ILSVRC2012_test_00098443.JPEG
+2025-03-03 11:12:34,397 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.79, patchAcc=0.87) | Time=1.25s
+2025-03-03 11:12:34,398 [INFO] [Rank=0] Processing 93/25000: ILSVRC2012_test_00097445.JPEG
+2025-03-03 11:12:34,799 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.67, patchAcc=0.81) | Time=1.26s
+2025-03-03 11:12:34,799 [INFO] [Rank=1] Processing 93/25000: ILSVRC2012_test_00097186.JPEG
+2025-03-03 11:12:35,655 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.67 (Running puzzleAcc=0.62, patchAcc=0.76) | Time=1.26s
+2025-03-03 11:12:35,656 [INFO] [Rank=2] Processing 93/25000: ILSVRC2012_test_00098447.JPEG
+2025-03-03 11:12:35,691 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.87) | Time=1.29s
+2025-03-03 11:12:35,692 [INFO] [Rank=0] Processing 94/25000: ILSVRC2012_test_00097449.JPEG
+2025-03-03 11:12:36,056 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.68, patchAcc=0.81) | Time=1.26s
+2025-03-03 11:12:36,057 [INFO] [Rank=1] Processing 94/25000: ILSVRC2012_test_00097190.JPEG
+2025-03-03 11:12:36,930 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.62, patchAcc=0.76) | Time=1.27s
+2025-03-03 11:12:36,931 [INFO] [Rank=2] Processing 94/25000: ILSVRC2012_test_00098451.JPEG
+2025-03-03 11:12:36,975 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.87) | Time=1.28s
+2025-03-03 11:12:36,976 [INFO] [Rank=0] Processing 95/25000: ILSVRC2012_test_00097453.JPEG
+2025-03-03 11:12:37,343 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.68, patchAcc=0.82) | Time=1.29s
+2025-03-03 11:12:37,344 [INFO] [Rank=1] Processing 95/25000: ILSVRC2012_test_00097194.JPEG
+2025-03-03 11:12:38,225 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.63, patchAcc=0.77) | Time=1.29s
+2025-03-03 11:12:38,226 [INFO] [Rank=2] Processing 95/25000: ILSVRC2012_test_00098455.JPEG
+2025-03-03 11:12:38,271 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.87) | Time=1.30s
+2025-03-03 11:12:38,272 [INFO] [Rank=0] Processing 96/25000: ILSVRC2012_test_00097457.JPEG
+2025-03-03 11:12:38,602 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.68, patchAcc=0.82) | Time=1.26s
+2025-03-03 11:12:38,603 [INFO] [Rank=1] Processing 96/25000: ILSVRC2012_test_00097198.JPEG
+2025-03-03 11:12:39,488 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.44 (Running puzzleAcc=0.62, patchAcc=0.76) | Time=1.26s
+2025-03-03 11:12:39,489 [INFO] [Rank=2] Processing 96/25000: ILSVRC2012_test_00098459.JPEG
+2025-03-03 11:12:39,528 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.87) | Time=1.26s
+2025-03-03 11:12:39,529 [INFO] [Rank=0] Processing 97/25000: ILSVRC2012_test_00097461.JPEG
+2025-03-03 11:12:39,835 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.68, patchAcc=0.81) | Time=1.23s
+2025-03-03 11:12:39,836 [INFO] [Rank=1] Processing 97/25000: ILSVRC2012_test_00097202.JPEG
+2025-03-03 11:12:40,759 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.62, patchAcc=0.77) | Time=1.27s
+2025-03-03 11:12:40,760 [INFO] [Rank=2] Processing 97/25000: ILSVRC2012_test_00098463.JPEG
+2025-03-03 11:12:40,796 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.88) | Time=1.27s
+2025-03-03 11:12:40,796 [INFO] [Rank=0] Processing 98/25000: ILSVRC2012_test_00097465.JPEG
+2025-03-03 11:12:41,106 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.68, patchAcc=0.81) | Time=1.27s
+2025-03-03 11:12:41,106 [INFO] [Rank=1] Processing 98/25000: ILSVRC2012_test_00097206.JPEG
+2025-03-03 11:12:42,036 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.63, patchAcc=0.77) | Time=1.28s
+2025-03-03 11:12:42,037 [INFO] [Rank=2] Processing 98/25000: ILSVRC2012_test_00098467.JPEG
+2025-03-03 11:12:42,047 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.81, patchAcc=0.88) | Time=1.25s
+2025-03-03 11:12:42,047 [INFO] [Rank=0] Processing 99/25000: ILSVRC2012_test_00097469.JPEG
+2025-03-03 11:12:42,394 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.68, patchAcc=0.81) | Time=1.29s
+2025-03-03 11:12:42,395 [INFO] [Rank=1] Processing 99/25000: ILSVRC2012_test_00097210.JPEG
+2025-03-03 11:12:43,303 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.22 (Running puzzleAcc=0.80, patchAcc=0.87) | Time=1.26s
+2025-03-03 11:12:43,304 [INFO] [Rank=0] Processing 100/25000: ILSVRC2012_test_00097473.JPEG
+2025-03-03 11:12:43,321 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.62, patchAcc=0.76) | Time=1.28s
+2025-03-03 11:12:43,322 [INFO] [Rank=2] Processing 99/25000: ILSVRC2012_test_00098471.JPEG
+2025-03-03 11:12:43,658 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.69, patchAcc=0.82) | Time=1.26s
+2025-03-03 11:12:43,659 [INFO] [Rank=1] Processing 100/25000: ILSVRC2012_test_00097214.JPEG
+2025-03-03 11:12:44,546 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.79, patchAcc=0.87) | Time=1.24s
+2025-03-03 11:12:44,547 [INFO] [Rank=0] Processing 101/25000: ILSVRC2012_test_00097477.JPEG
+2025-03-03 11:12:44,588 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.63, patchAcc=0.77) | Time=1.27s
+2025-03-03 11:12:44,589 [INFO] [Rank=2] Processing 100/25000: ILSVRC2012_test_00098475.JPEG
+2025-03-03 11:12:44,915 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.11 (Running puzzleAcc=0.68, patchAcc=0.81) | Time=1.26s
+2025-03-03 11:12:44,916 [INFO] [Rank=1] Processing 101/25000: ILSVRC2012_test_00097218.JPEG
+2025-03-03 11:12:45,819 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.79, patchAcc=0.87) | Time=1.27s
+2025-03-03 11:12:45,820 [INFO] [Rank=0] Processing 102/25000: ILSVRC2012_test_00097481.JPEG
+2025-03-03 11:12:45,838 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.63, patchAcc=0.77) | Time=1.25s
+2025-03-03 11:12:45,839 [INFO] [Rank=2] Processing 101/25000: ILSVRC2012_test_00098479.JPEG
+2025-03-03 11:12:46,202 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.67, patchAcc=0.80) | Time=1.29s
+2025-03-03 11:12:46,203 [INFO] [Rank=1] Processing 102/25000: ILSVRC2012_test_00097222.JPEG
+2025-03-03 11:12:47,090 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.79, patchAcc=0.87) | Time=1.27s
+2025-03-03 11:12:47,091 [INFO] [Rank=0] Processing 103/25000: ILSVRC2012_test_00097485.JPEG
+2025-03-03 11:12:47,117 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.63, patchAcc=0.77) | Time=1.28s
+2025-03-03 11:12:47,118 [INFO] [Rank=2] Processing 102/25000: ILSVRC2012_test_00098483.JPEG
+2025-03-03 11:12:47,489 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.22 (Running puzzleAcc=0.67, patchAcc=0.80) | Time=1.29s
+2025-03-03 11:12:47,490 [INFO] [Rank=1] Processing 103/25000: ILSVRC2012_test_00097226.JPEG
+2025-03-03 11:12:48,360 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.87) | Time=1.27s
+2025-03-03 11:12:48,361 [INFO] [Rank=0] Processing 104/25000: ILSVRC2012_test_00097489.JPEG
+2025-03-03 11:12:48,394 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.28s
+2025-03-03 11:12:48,395 [INFO] [Rank=2] Processing 103/25000: ILSVRC2012_test_00098487.JPEG
+2025-03-03 11:12:48,746 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.22 (Running puzzleAcc=0.66, patchAcc=0.79) | Time=1.26s
+2025-03-03 11:12:48,747 [INFO] [Rank=1] Processing 104/25000: ILSVRC2012_test_00097230.JPEG
+2025-03-03 11:12:49,665 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.27s
+2025-03-03 11:12:49,666 [INFO] [Rank=2] Processing 104/25000: ILSVRC2012_test_00098491.JPEG
+2025-03-03 11:12:49,675 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.87) | Time=1.31s
+2025-03-03 11:12:49,676 [INFO] [Rank=0] Processing 105/25000: ILSVRC2012_test_00097493.JPEG
+2025-03-03 11:12:50,017 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.65, patchAcc=0.79) | Time=1.27s
+2025-03-03 11:12:50,018 [INFO] [Rank=1] Processing 105/25000: ILSVRC2012_test_00097234.JPEG
+2025-03-03 11:12:50,946 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.78) | Time=1.28s
+2025-03-03 11:12:50,946 [INFO] [Rank=2] Processing 105/25000: ILSVRC2012_test_00098495.JPEG
+2025-03-03 11:12:50,964 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.88) | Time=1.29s
+2025-03-03 11:12:50,965 [INFO] [Rank=0] Processing 106/25000: ILSVRC2012_test_00097497.JPEG
+2025-03-03 11:12:51,286 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.27s
+2025-03-03 11:12:51,287 [INFO] [Rank=1] Processing 106/25000: ILSVRC2012_test_00097238.JPEG
+2025-03-03 11:12:52,246 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.88) | Time=1.28s
+2025-03-03 11:12:52,248 [INFO] [Rank=0] Processing 107/25000: ILSVRC2012_test_00097501.JPEG
+2025-03-03 11:12:52,283 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.34s
+2025-03-03 11:12:52,283 [INFO] [Rank=2] Processing 106/25000: ILSVRC2012_test_00098499.JPEG
+2025-03-03 11:12:52,541 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.25s
+2025-03-03 11:12:52,542 [INFO] [Rank=1] Processing 107/25000: ILSVRC2012_test_00097242.JPEG
+2025-03-03 11:12:53,520 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.44 (Running puzzleAcc=0.79, patchAcc=0.87) | Time=1.27s
+2025-03-03 11:12:53,521 [INFO] [Rank=0] Processing 108/25000: ILSVRC2012_test_00097505.JPEG
+2025-03-03 11:12:53,553 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.67 (Running puzzleAcc=0.64, patchAcc=0.78) | Time=1.27s
+2025-03-03 11:12:53,554 [INFO] [Rank=2] Processing 107/25000: ILSVRC2012_test_00098503.JPEG
+2025-03-03 11:12:53,802 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.79) | Time=1.26s
+2025-03-03 11:12:53,803 [INFO] [Rank=1] Processing 108/25000: ILSVRC2012_test_00097246.JPEG
+2025-03-03 11:12:54,800 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.79, patchAcc=0.87) | Time=1.28s
+2025-03-03 11:12:54,801 [INFO] [Rank=0] Processing 109/25000: ILSVRC2012_test_00097509.JPEG
+2025-03-03 11:12:54,841 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.22 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.29s
+2025-03-03 11:12:54,842 [INFO] [Rank=2] Processing 108/25000: ILSVRC2012_test_00098507.JPEG
+2025-03-03 11:12:55,149 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.66, patchAcc=0.79) | Time=1.35s
+2025-03-03 11:12:55,150 [INFO] [Rank=1] Processing 109/25000: ILSVRC2012_test_00097250.JPEG
+2025-03-03 11:12:56,095 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.79, patchAcc=0.87) | Time=1.29s
+2025-03-03 11:12:56,096 [INFO] [Rank=0] Processing 110/25000: ILSVRC2012_test_00097513.JPEG
+2025-03-03 11:12:56,112 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.27s
+2025-03-03 11:12:56,113 [INFO] [Rank=2] Processing 109/25000: ILSVRC2012_test_00098511.JPEG
+2025-03-03 11:12:56,440 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.65, patchAcc=0.79) | Time=1.29s
+2025-03-03 11:12:56,441 [INFO] [Rank=1] Processing 110/25000: ILSVRC2012_test_00097254.JPEG
+2025-03-03 11:12:57,391 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.22 (Running puzzleAcc=0.63, patchAcc=0.77) | Time=1.28s
+2025-03-03 11:12:57,391 [INFO] [Rank=2] Processing 110/25000: ILSVRC2012_test_00098515.JPEG
+2025-03-03 11:12:57,416 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.79, patchAcc=0.87) | Time=1.32s
+2025-03-03 11:12:57,417 [INFO] [Rank=0] Processing 111/25000: ILSVRC2012_test_00097517.JPEG
+2025-03-03 11:12:57,682 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.79) | Time=1.24s
+2025-03-03 11:12:57,683 [INFO] [Rank=1] Processing 111/25000: ILSVRC2012_test_00097258.JPEG
+2025-03-03 11:12:58,661 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.27s
+2025-03-03 11:12:58,662 [INFO] [Rank=2] Processing 111/25000: ILSVRC2012_test_00098519.JPEG
+2025-03-03 11:12:58,702 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.79, patchAcc=0.87) | Time=1.28s
+2025-03-03 11:12:58,702 [INFO] [Rank=0] Processing 112/25000: ILSVRC2012_test_00097521.JPEG
+2025-03-03 11:12:58,950 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.66, patchAcc=0.79) | Time=1.27s
+2025-03-03 11:12:58,951 [INFO] [Rank=1] Processing 112/25000: ILSVRC2012_test_00097262.JPEG
+2025-03-03 11:12:59,943 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.28s
+2025-03-03 11:12:59,944 [INFO] [Rank=2] Processing 112/25000: ILSVRC2012_test_00098523.JPEG
+2025-03-03 11:12:59,970 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.79, patchAcc=0.88) | Time=1.27s
+2025-03-03 11:12:59,971 [INFO] [Rank=0] Processing 113/25000: ILSVRC2012_test_00097525.JPEG
+2025-03-03 11:13:00,237 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.66, patchAcc=0.79) | Time=1.29s
+2025-03-03 11:13:00,238 [INFO] [Rank=1] Processing 113/25000: ILSVRC2012_test_00097266.JPEG
+2025-03-03 11:13:01,235 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.67 (Running puzzleAcc=0.63, patchAcc=0.77) | Time=1.29s
+2025-03-03 11:13:01,236 [INFO] [Rank=2] Processing 113/25000: ILSVRC2012_test_00098527.JPEG
+2025-03-03 11:13:01,247 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.88) | Time=1.28s
+2025-03-03 11:13:01,248 [INFO] [Rank=0] Processing 114/25000: ILSVRC2012_test_00097529.JPEG
+2025-03-03 11:13:01,504 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.66, patchAcc=0.79) | Time=1.27s
+2025-03-03 11:13:01,505 [INFO] [Rank=1] Processing 114/25000: ILSVRC2012_test_00097270.JPEG
+2025-03-03 11:13:02,513 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.88) | Time=1.27s
+2025-03-03 11:13:02,514 [INFO] [Rank=0] Processing 115/25000: ILSVRC2012_test_00097533.JPEG
+2025-03-03 11:13:02,548 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.31s
+2025-03-03 11:13:02,549 [INFO] [Rank=2] Processing 114/25000: ILSVRC2012_test_00098531.JPEG
+2025-03-03 11:13:02,771 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.11 (Running puzzleAcc=0.66, patchAcc=0.79) | Time=1.27s
+2025-03-03 11:13:02,772 [INFO] [Rank=1] Processing 115/25000: ILSVRC2012_test_00097274.JPEG
+2025-03-03 11:13:03,777 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.79, patchAcc=0.87) | Time=1.26s
+2025-03-03 11:13:03,778 [INFO] [Rank=0] Processing 116/25000: ILSVRC2012_test_00097537.JPEG
+2025-03-03 11:13:03,843 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.63, patchAcc=0.77) | Time=1.29s
+2025-03-03 11:13:03,844 [INFO] [Rank=2] Processing 115/25000: ILSVRC2012_test_00098535.JPEG
+2025-03-03 11:13:04,034 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.26s
+2025-03-03 11:13:04,035 [INFO] [Rank=1] Processing 116/25000: ILSVRC2012_test_00097278.JPEG
+2025-03-03 11:13:05,052 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.79, patchAcc=0.87) | Time=1.27s
+2025-03-03 11:13:05,053 [INFO] [Rank=0] Processing 117/25000: ILSVRC2012_test_00097541.JPEG
+2025-03-03 11:13:05,115 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.63, patchAcc=0.77) | Time=1.27s
+2025-03-03 11:13:05,116 [INFO] [Rank=2] Processing 116/25000: ILSVRC2012_test_00098539.JPEG
+2025-03-03 11:13:05,273 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.11 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.24s
+2025-03-03 11:13:05,274 [INFO] [Rank=1] Processing 117/25000: ILSVRC2012_test_00097282.JPEG
+2025-03-03 11:13:06,337 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.79, patchAcc=0.88) | Time=1.28s
+2025-03-03 11:13:06,338 [INFO] [Rank=0] Processing 118/25000: ILSVRC2012_test_00097545.JPEG
+2025-03-03 11:13:06,416 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.30s
+2025-03-03 11:13:06,417 [INFO] [Rank=2] Processing 117/25000: ILSVRC2012_test_00098543.JPEG
+2025-03-03 11:13:06,547 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.44 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.27s
+2025-03-03 11:13:06,548 [INFO] [Rank=1] Processing 118/25000: ILSVRC2012_test_00097286.JPEG
+2025-03-03 11:13:07,608 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.88) | Time=1.27s
+2025-03-03 11:13:07,609 [INFO] [Rank=0] Processing 119/25000: ILSVRC2012_test_00097549.JPEG
+2025-03-03 11:13:07,689 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.27s
+2025-03-03 11:13:07,690 [INFO] [Rank=2] Processing 118/25000: ILSVRC2012_test_00098547.JPEG
+2025-03-03 11:13:07,807 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.26s
+2025-03-03 11:13:07,808 [INFO] [Rank=1] Processing 119/25000: ILSVRC2012_test_00097290.JPEG
+2025-03-03 11:13:08,873 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.11 (Running puzzleAcc=0.79, patchAcc=0.87) | Time=1.26s
+2025-03-03 11:13:08,874 [INFO] [Rank=0] Processing 120/25000: ILSVRC2012_test_00097553.JPEG
+2025-03-03 11:13:08,951 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.26s
+2025-03-03 11:13:08,952 [INFO] [Rank=2] Processing 119/25000: ILSVRC2012_test_00098551.JPEG
+2025-03-03 11:13:09,086 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.56 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.28s
+2025-03-03 11:13:09,087 [INFO] [Rank=1] Processing 120/25000: ILSVRC2012_test_00097294.JPEG
+2025-03-03 11:13:10,158 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.79, patchAcc=0.87) | Time=1.28s
+2025-03-03 11:13:10,159 [INFO] [Rank=0] Processing 121/25000: ILSVRC2012_test_00097557.JPEG
+2025-03-03 11:13:10,237 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.29s
+2025-03-03 11:13:10,238 [INFO] [Rank=2] Processing 120/25000: ILSVRC2012_test_00098555.JPEG
+2025-03-03 11:13:10,367 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.78) | Time=1.28s
+2025-03-03 11:13:10,368 [INFO] [Rank=1] Processing 121/25000: ILSVRC2012_test_00097298.JPEG
+2025-03-03 11:13:11,477 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.79, patchAcc=0.87) | Time=1.32s
+2025-03-03 11:13:11,479 [INFO] [Rank=0] Processing 122/25000: ILSVRC2012_test_00097561.JPEG
+2025-03-03 11:13:11,520 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.28s
+2025-03-03 11:13:11,520 [INFO] [Rank=2] Processing 121/25000: ILSVRC2012_test_00098559.JPEG
+2025-03-03 11:13:11,645 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.28s
+2025-03-03 11:13:11,646 [INFO] [Rank=1] Processing 122/25000: ILSVRC2012_test_00097302.JPEG
+2025-03-03 11:13:12,749 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.87) | Time=1.27s
+2025-03-03 11:13:12,750 [INFO] [Rank=0] Processing 123/25000: ILSVRC2012_test_00097565.JPEG
+2025-03-03 11:13:12,806 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.29s
+2025-03-03 11:13:12,807 [INFO] [Rank=2] Processing 122/25000: ILSVRC2012_test_00098563.JPEG
+2025-03-03 11:13:12,916 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.27s
+2025-03-03 11:13:12,917 [INFO] [Rank=1] Processing 123/25000: ILSVRC2012_test_00097306.JPEG
+2025-03-03 11:13:14,022 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.87) | Time=1.27s
+2025-03-03 11:13:14,024 [INFO] [Rank=0] Processing 124/25000: ILSVRC2012_test_00097569.JPEG
+2025-03-03 11:13:14,075 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.44 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.27s
+2025-03-03 11:13:14,076 [INFO] [Rank=2] Processing 123/25000: ILSVRC2012_test_00098567.JPEG
+2025-03-03 11:13:14,189 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.27s
+2025-03-03 11:13:14,190 [INFO] [Rank=1] Processing 124/25000: ILSVRC2012_test_00097310.JPEG
+2025-03-03 11:13:15,290 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.88) | Time=1.27s
+2025-03-03 11:13:15,291 [INFO] [Rank=0] Processing 125/25000: ILSVRC2012_test_00097573.JPEG
+2025-03-03 11:13:15,389 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.31s
+2025-03-03 11:13:15,389 [INFO] [Rank=2] Processing 124/25000: ILSVRC2012_test_00098571.JPEG
+2025-03-03 11:13:15,438 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.11 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.25s
+2025-03-03 11:13:15,439 [INFO] [Rank=1] Processing 125/25000: ILSVRC2012_test_00097314.JPEG
+2025-03-03 11:13:16,573 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.88) | Time=1.28s
+2025-03-03 11:13:16,574 [INFO] [Rank=0] Processing 126/25000: ILSVRC2012_test_00097577.JPEG
+2025-03-03 11:13:16,710 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.44 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.32s
+2025-03-03 11:13:16,711 [INFO] [Rank=2] Processing 125/25000: ILSVRC2012_test_00098575.JPEG
+2025-03-03 11:13:16,726 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.29s
+2025-03-03 11:13:16,727 [INFO] [Rank=1] Processing 126/25000: ILSVRC2012_test_00097318.JPEG
+2025-03-03 11:13:17,831 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.88) | Time=1.26s
+2025-03-03 11:13:17,832 [INFO] [Rank=0] Processing 127/25000: ILSVRC2012_test_00097581.JPEG
+2025-03-03 11:13:17,985 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.26s
+2025-03-03 11:13:17,986 [INFO] [Rank=1] Processing 127/25000: ILSVRC2012_test_00097322.JPEG
+2025-03-03 11:13:17,997 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.29s
+2025-03-03 11:13:17,998 [INFO] [Rank=2] Processing 126/25000: ILSVRC2012_test_00098579.JPEG
+2025-03-03 11:13:19,121 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.88) | Time=1.29s
+2025-03-03 11:13:19,122 [INFO] [Rank=0] Processing 128/25000: ILSVRC2012_test_00097585.JPEG
+2025-03-03 11:13:19,235 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.77) | Time=1.25s
+2025-03-03 11:13:19,236 [INFO] [Rank=1] Processing 128/25000: ILSVRC2012_test_00097326.JPEG
+2025-03-03 11:13:19,270 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.27s
+2025-03-03 11:13:19,271 [INFO] [Rank=2] Processing 127/25000: ILSVRC2012_test_00098583.JPEG
+2025-03-03 11:13:20,412 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.88) | Time=1.29s
+2025-03-03 11:13:20,413 [INFO] [Rank=0] Processing 129/25000: ILSVRC2012_test_00097589.JPEG
+2025-03-03 11:13:20,553 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.28s
+2025-03-03 11:13:20,555 [INFO] [Rank=2] Processing 128/25000: ILSVRC2012_test_00098587.JPEG
+2025-03-03 11:13:20,560 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.77) | Time=1.32s
+2025-03-03 11:13:20,561 [INFO] [Rank=1] Processing 129/25000: ILSVRC2012_test_00097330.JPEG
+2025-03-03 11:13:21,684 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.81, patchAcc=0.88) | Time=1.27s
+2025-03-03 11:13:21,685 [INFO] [Rank=0] Processing 130/25000: ILSVRC2012_test_00097593.JPEG
+2025-03-03 11:13:21,831 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.28s
+2025-03-03 11:13:21,832 [INFO] [Rank=2] Processing 129/25000: ILSVRC2012_test_00098591.JPEG
+2025-03-03 11:13:21,858 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.30s
+2025-03-03 11:13:21,859 [INFO] [Rank=1] Processing 130/25000: ILSVRC2012_test_00097334.JPEG
+2025-03-03 11:13:22,953 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.81, patchAcc=0.88) | Time=1.27s
+2025-03-03 11:13:22,954 [INFO] [Rank=0] Processing 131/25000: ILSVRC2012_test_00097597.JPEG
+2025-03-03 11:13:23,114 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.77) | Time=1.26s
+2025-03-03 11:13:23,116 [INFO] [Rank=1] Processing 131/25000: ILSVRC2012_test_00097338.JPEG
+2025-03-03 11:13:23,148 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.32s
+2025-03-03 11:13:23,148 [INFO] [Rank=2] Processing 130/25000: ILSVRC2012_test_00098595.JPEG
+2025-03-03 11:13:24,225 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.81, patchAcc=0.88) | Time=1.27s
+2025-03-03 11:13:24,226 [INFO] [Rank=0] Processing 132/25000: ILSVRC2012_test_00097601.JPEG
+2025-03-03 11:13:24,422 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.27s
+2025-03-03 11:13:24,423 [INFO] [Rank=2] Processing 131/25000: ILSVRC2012_test_00098599.JPEG
+2025-03-03 11:13:24,424 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.77) | Time=1.31s
+2025-03-03 11:13:24,425 [INFO] [Rank=1] Processing 132/25000: ILSVRC2012_test_00097342.JPEG
+2025-03-03 11:13:25,499 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.81, patchAcc=0.88) | Time=1.27s
+2025-03-03 11:13:25,500 [INFO] [Rank=0] Processing 133/25000: ILSVRC2012_test_00097605.JPEG
+2025-03-03 11:13:25,683 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.26s
+2025-03-03 11:13:25,684 [INFO] [Rank=1] Processing 133/25000: ILSVRC2012_test_00097346.JPEG
+2025-03-03 11:13:25,689 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.44 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.27s
+2025-03-03 11:13:25,689 [INFO] [Rank=2] Processing 132/25000: ILSVRC2012_test_00098603.JPEG
+2025-03-03 11:13:26,775 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.81, patchAcc=0.88) | Time=1.27s
+2025-03-03 11:13:26,776 [INFO] [Rank=0] Processing 134/25000: ILSVRC2012_test_00097609.JPEG
+2025-03-03 11:13:26,945 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.26s
+2025-03-03 11:13:26,946 [INFO] [Rank=2] Processing 133/25000: ILSVRC2012_test_00098607.JPEG
+2025-03-03 11:13:26,947 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.67 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.26s
+2025-03-03 11:13:26,948 [INFO] [Rank=1] Processing 134/25000: ILSVRC2012_test_00097350.JPEG
+2025-03-03 11:13:28,058 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.81, patchAcc=0.88) | Time=1.28s
+2025-03-03 11:13:28,059 [INFO] [Rank=0] Processing 135/25000: ILSVRC2012_test_00097613.JPEG
+2025-03-03 11:13:28,197 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.25s
+2025-03-03 11:13:28,197 [INFO] [Rank=1] Processing 135/25000: ILSVRC2012_test_00097354.JPEG
+2025-03-03 11:13:28,252 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.31s
+2025-03-03 11:13:28,253 [INFO] [Rank=2] Processing 134/25000: ILSVRC2012_test_00098611.JPEG
+2025-03-03 11:13:29,328 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.81, patchAcc=0.88) | Time=1.27s
+2025-03-03 11:13:29,329 [INFO] [Rank=0] Processing 136/25000: ILSVRC2012_test_00097617.JPEG
+2025-03-03 11:13:29,560 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.66, patchAcc=0.78) | Time=1.31s
+2025-03-03 11:13:29,561 [INFO] [Rank=2] Processing 135/25000: ILSVRC2012_test_00098615.JPEG
+2025-03-03 11:13:29,580 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.11 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.38s
+2025-03-03 11:13:29,581 [INFO] [Rank=1] Processing 136/25000: ILSVRC2012_test_00097358.JPEG
+2025-03-03 11:13:30,574 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.80, patchAcc=0.88) | Time=1.24s
+2025-03-03 11:13:30,575 [INFO] [Rank=0] Processing 137/25000: ILSVRC2012_test_00097621.JPEG
+2025-03-03 11:13:30,851 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.22 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.27s
+2025-03-03 11:13:30,853 [INFO] [Rank=1] Processing 137/25000: ILSVRC2012_test_00097362.JPEG
+2025-03-03 11:13:30,859 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.30s
+2025-03-03 11:13:30,860 [INFO] [Rank=2] Processing 136/25000: ILSVRC2012_test_00098619.JPEG
+2025-03-03 11:13:31,874 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.88) | Time=1.30s
+2025-03-03 11:13:31,875 [INFO] [Rank=0] Processing 138/25000: ILSVRC2012_test_00097625.JPEG
+2025-03-03 11:13:32,103 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.25s
+2025-03-03 11:13:32,104 [INFO] [Rank=1] Processing 138/25000: ILSVRC2012_test_00097366.JPEG
+2025-03-03 11:13:32,129 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.67 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.27s
+2025-03-03 11:13:32,130 [INFO] [Rank=2] Processing 137/25000: ILSVRC2012_test_00098623.JPEG
+2025-03-03 11:13:33,168 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.88) | Time=1.29s
+2025-03-03 11:13:33,169 [INFO] [Rank=0] Processing 139/25000: ILSVRC2012_test_00097629.JPEG
+2025-03-03 11:13:33,349 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.56 (Running puzzleAcc=0.63, patchAcc=0.77) | Time=1.24s
+2025-03-03 11:13:33,350 [INFO] [Rank=1] Processing 139/25000: ILSVRC2012_test_00097370.JPEG
+2025-03-03 11:13:33,528 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.40s
+2025-03-03 11:13:33,529 [INFO] [Rank=2] Processing 138/25000: ILSVRC2012_test_00098627.JPEG
+2025-03-03 11:13:34,449 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.22 (Running puzzleAcc=0.80, patchAcc=0.87) | Time=1.28s
+2025-03-03 11:13:34,450 [INFO] [Rank=0] Processing 140/25000: ILSVRC2012_test_00097633.JPEG
+2025-03-03 11:13:34,618 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.63, patchAcc=0.77) | Time=1.27s
+2025-03-03 11:13:34,619 [INFO] [Rank=1] Processing 140/25000: ILSVRC2012_test_00097374.JPEG
+2025-03-03 11:13:34,780 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.44 (Running puzzleAcc=0.64, patchAcc=0.78) | Time=1.25s
+2025-03-03 11:13:34,781 [INFO] [Rank=2] Processing 139/25000: ILSVRC2012_test_00098631.JPEG
+2025-03-03 11:13:35,731 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.88) | Time=1.28s
+2025-03-03 11:13:35,732 [INFO] [Rank=0] Processing 141/25000: ILSVRC2012_test_00097637.JPEG
+2025-03-03 11:13:35,909 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.29s
+2025-03-03 11:13:35,910 [INFO] [Rank=1] Processing 141/25000: ILSVRC2012_test_00097378.JPEG
+2025-03-03 11:13:36,093 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.31s
+2025-03-03 11:13:36,094 [INFO] [Rank=2] Processing 140/25000: ILSVRC2012_test_00098635.JPEG
+2025-03-03 11:13:37,010 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.88) | Time=1.28s
+2025-03-03 11:13:37,011 [INFO] [Rank=0] Processing 142/25000: ILSVRC2012_test_00097641.JPEG
+2025-03-03 11:13:37,193 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.28s
+2025-03-03 11:13:37,193 [INFO] [Rank=1] Processing 142/25000: ILSVRC2012_test_00097382.JPEG
+2025-03-03 11:13:37,382 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.29s
+2025-03-03 11:13:37,383 [INFO] [Rank=2] Processing 141/25000: ILSVRC2012_test_00098639.JPEG
+2025-03-03 11:13:38,288 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.88) | Time=1.28s
+2025-03-03 11:13:38,289 [INFO] [Rank=0] Processing 143/25000: ILSVRC2012_test_00097645.JPEG
+2025-03-03 11:13:38,446 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.67 (Running puzzleAcc=0.63, patchAcc=0.77) | Time=1.25s
+2025-03-03 11:13:38,447 [INFO] [Rank=1] Processing 143/25000: ILSVRC2012_test_00097386.JPEG
+2025-03-03 11:13:38,662 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.77) | Time=1.28s
+2025-03-03 11:13:38,663 [INFO] [Rank=2] Processing 142/25000: ILSVRC2012_test_00098643.JPEG
+2025-03-03 11:13:39,592 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.88) | Time=1.30s
+2025-03-03 11:13:39,593 [INFO] [Rank=0] Processing 144/25000: ILSVRC2012_test_00097649.JPEG
+2025-03-03 11:13:39,698 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.22 (Running puzzleAcc=0.63, patchAcc=0.77) | Time=1.25s
+2025-03-03 11:13:39,699 [INFO] [Rank=1] Processing 144/25000: ILSVRC2012_test_00097390.JPEG
+2025-03-03 11:13:39,932 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.77) | Time=1.27s
+2025-03-03 11:13:39,933 [INFO] [Rank=2] Processing 143/25000: ILSVRC2012_test_00098647.JPEG
+2025-03-03 11:13:40,860 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.81, patchAcc=0.88) | Time=1.27s
+2025-03-03 11:13:40,862 [INFO] [Rank=0] Processing 145/25000: ILSVRC2012_test_00097653.JPEG
+2025-03-03 11:13:40,943 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.44 (Running puzzleAcc=0.62, patchAcc=0.76) | Time=1.24s
+2025-03-03 11:13:40,944 [INFO] [Rank=1] Processing 145/25000: ILSVRC2012_test_00097394.JPEG
+2025-03-03 11:13:41,233 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.30s
+2025-03-03 11:13:41,234 [INFO] [Rank=2] Processing 144/25000: ILSVRC2012_test_00098651.JPEG
+2025-03-03 11:13:42,153 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.81, patchAcc=0.88) | Time=1.29s
+2025-03-03 11:13:42,154 [INFO] [Rank=0] Processing 146/25000: ILSVRC2012_test_00097657.JPEG
+2025-03-03 11:13:42,188 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.63, patchAcc=0.77) | Time=1.24s
+2025-03-03 11:13:42,189 [INFO] [Rank=1] Processing 146/25000: ILSVRC2012_test_00097398.JPEG
+2025-03-03 11:13:42,509 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.65, patchAcc=0.77) | Time=1.28s
+2025-03-03 11:13:42,510 [INFO] [Rank=2] Processing 145/25000: ILSVRC2012_test_00098655.JPEG
+2025-03-03 11:13:43,426 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.63, patchAcc=0.77) | Time=1.24s
+2025-03-03 11:13:43,431 [INFO] [Rank=1] Processing 147/25000: ILSVRC2012_test_00097402.JPEG
+2025-03-03 11:13:43,435 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.81, patchAcc=0.88) | Time=1.28s
+2025-03-03 11:13:43,436 [INFO] [Rank=0] Processing 147/25000: ILSVRC2012_test_00097661.JPEG
+2025-03-03 11:13:43,770 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.77) | Time=1.26s
+2025-03-03 11:13:43,771 [INFO] [Rank=2] Processing 146/25000: ILSVRC2012_test_00098659.JPEG
+2025-03-03 11:13:44,683 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.67 (Running puzzleAcc=0.63, patchAcc=0.77) | Time=1.25s
+2025-03-03 11:13:44,684 [INFO] [Rank=1] Processing 148/25000: ILSVRC2012_test_00097406.JPEG
+2025-03-03 11:13:44,724 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.81, patchAcc=0.88) | Time=1.29s
+2025-03-03 11:13:44,725 [INFO] [Rank=0] Processing 148/25000: ILSVRC2012_test_00097665.JPEG
+2025-03-03 11:13:45,016 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.77) | Time=1.24s
+2025-03-03 11:13:45,017 [INFO] [Rank=2] Processing 147/25000: ILSVRC2012_test_00098663.JPEG
+2025-03-03 11:13:45,944 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.63, patchAcc=0.77) | Time=1.26s
+2025-03-03 11:13:45,945 [INFO] [Rank=1] Processing 149/25000: ILSVRC2012_test_00097410.JPEG
+2025-03-03 11:13:45,984 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.81, patchAcc=0.88) | Time=1.26s
+2025-03-03 11:13:45,985 [INFO] [Rank=0] Processing 149/25000: ILSVRC2012_test_00097669.JPEG
+2025-03-03 11:13:46,292 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.28s
+2025-03-03 11:13:46,293 [INFO] [Rank=2] Processing 148/25000: ILSVRC2012_test_00098667.JPEG
+2025-03-03 11:13:47,237 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.67 (Running puzzleAcc=0.62, patchAcc=0.77) | Time=1.29s
+2025-03-03 11:13:47,238 [INFO] [Rank=1] Processing 150/25000: ILSVRC2012_test_00097414.JPEG
+2025-03-03 11:13:47,256 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.81, patchAcc=0.88) | Time=1.27s
+2025-03-03 11:13:47,257 [INFO] [Rank=0] Processing 150/25000: ILSVRC2012_test_00097673.JPEG
+2025-03-03 11:13:47,586 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.66, patchAcc=0.78) | Time=1.29s
+2025-03-03 11:13:47,587 [INFO] [Rank=2] Processing 149/25000: ILSVRC2012_test_00098671.JPEG
+2025-03-03 11:13:48,467 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.63, patchAcc=0.77) | Time=1.23s
+2025-03-03 11:13:48,468 [INFO] [Rank=1] Processing 151/25000: ILSVRC2012_test_00097418.JPEG
+2025-03-03 11:13:48,523 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.81, patchAcc=0.88) | Time=1.27s
+2025-03-03 11:13:48,524 [INFO] [Rank=0] Processing 151/25000: ILSVRC2012_test_00097677.JPEG
+2025-03-03 11:13:48,853 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.67 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.27s
+2025-03-03 11:13:48,854 [INFO] [Rank=2] Processing 150/25000: ILSVRC2012_test_00098675.JPEG
+2025-03-03 11:13:49,707 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.11 (Running puzzleAcc=0.62, patchAcc=0.77) | Time=1.24s
+2025-03-03 11:13:49,707 [INFO] [Rank=1] Processing 152/25000: ILSVRC2012_test_00097422.JPEG
+2025-03-03 11:13:49,786 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.67 (Running puzzleAcc=0.81, patchAcc=0.88) | Time=1.26s
+2025-03-03 11:13:49,787 [INFO] [Rank=0] Processing 152/25000: ILSVRC2012_test_00097681.JPEG
+2025-03-03 11:13:50,132 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.28s
+2025-03-03 11:13:50,133 [INFO] [Rank=2] Processing 151/25000: ILSVRC2012_test_00098679.JPEG
+2025-03-03 11:13:51,008 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.62, patchAcc=0.77) | Time=1.30s
+2025-03-03 11:13:51,009 [INFO] [Rank=1] Processing 153/25000: ILSVRC2012_test_00097426.JPEG
+2025-03-03 11:13:51,115 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.81, patchAcc=0.88) | Time=1.33s
+2025-03-03 11:13:51,116 [INFO] [Rank=0] Processing 153/25000: ILSVRC2012_test_00097685.JPEG
+2025-03-03 11:13:51,398 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.64, patchAcc=0.78) | Time=1.27s
+2025-03-03 11:13:51,399 [INFO] [Rank=2] Processing 152/25000: ILSVRC2012_test_00098683.JPEG
+2025-03-03 11:13:52,276 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.62, patchAcc=0.77) | Time=1.27s
+2025-03-03 11:13:52,277 [INFO] [Rank=1] Processing 154/25000: ILSVRC2012_test_00097430.JPEG
+2025-03-03 11:13:52,367 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.81, patchAcc=0.88) | Time=1.25s
+2025-03-03 11:13:52,368 [INFO] [Rank=0] Processing 154/25000: ILSVRC2012_test_00097689.JPEG
+2025-03-03 11:13:52,710 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.78) | Time=1.31s
+2025-03-03 11:13:52,711 [INFO] [Rank=2] Processing 153/25000: ILSVRC2012_test_00098687.JPEG
+2025-03-03 11:13:53,526 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.62, patchAcc=0.77) | Time=1.25s
+2025-03-03 11:13:53,527 [INFO] [Rank=1] Processing 155/25000: ILSVRC2012_test_00097434.JPEG
+2025-03-03 11:13:53,622 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.81, patchAcc=0.88) | Time=1.25s
+2025-03-03 11:13:53,623 [INFO] [Rank=0] Processing 155/25000: ILSVRC2012_test_00097693.JPEG
+2025-03-03 11:13:53,974 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.26s
+2025-03-03 11:13:53,975 [INFO] [Rank=2] Processing 154/25000: ILSVRC2012_test_00098691.JPEG
+2025-03-03 11:13:54,787 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.22 (Running puzzleAcc=0.61, patchAcc=0.76) | Time=1.26s
+2025-03-03 11:13:54,788 [INFO] [Rank=1] Processing 156/25000: ILSVRC2012_test_00097438.JPEG
+2025-03-03 11:13:54,933 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.11 (Running puzzleAcc=0.80, patchAcc=0.87) | Time=1.31s
+2025-03-03 11:13:54,934 [INFO] [Rank=0] Processing 156/25000: ILSVRC2012_test_00097697.JPEG
+2025-03-03 11:13:55,248 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.27s
+2025-03-03 11:13:55,249 [INFO] [Rank=2] Processing 155/25000: ILSVRC2012_test_00098695.JPEG
+2025-03-03 11:13:56,061 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.61, patchAcc=0.76) | Time=1.27s
+2025-03-03 11:13:56,062 [INFO] [Rank=1] Processing 157/25000: ILSVRC2012_test_00097442.JPEG
+2025-03-03 11:13:56,210 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.87) | Time=1.28s
+2025-03-03 11:13:56,211 [INFO] [Rank=0] Processing 157/25000: ILSVRC2012_test_00097701.JPEG
+2025-03-03 11:13:56,529 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.28s
+2025-03-03 11:13:56,530 [INFO] [Rank=2] Processing 156/25000: ILSVRC2012_test_00098699.JPEG
+2025-03-03 11:13:57,319 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.61, patchAcc=0.76) | Time=1.26s
+2025-03-03 11:13:57,319 [INFO] [Rank=1] Processing 158/25000: ILSVRC2012_test_00097446.JPEG
+2025-03-03 11:13:57,542 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.87) | Time=1.33s
+2025-03-03 11:13:57,543 [INFO] [Rank=0] Processing 158/25000: ILSVRC2012_test_00097705.JPEG
+2025-03-03 11:13:57,837 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.56 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.31s
+2025-03-03 11:13:57,838 [INFO] [Rank=2] Processing 157/25000: ILSVRC2012_test_00098703.JPEG
+2025-03-03 11:13:58,604 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.61, patchAcc=0.76) | Time=1.28s
+2025-03-03 11:13:58,605 [INFO] [Rank=1] Processing 159/25000: ILSVRC2012_test_00097450.JPEG
+2025-03-03 11:13:58,808 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.88) | Time=1.26s
+2025-03-03 11:13:58,809 [INFO] [Rank=0] Processing 159/25000: ILSVRC2012_test_00097709.JPEG
+2025-03-03 11:13:59,143 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.64, patchAcc=0.78) | Time=1.31s
+2025-03-03 11:13:59,144 [INFO] [Rank=2] Processing 158/25000: ILSVRC2012_test_00098707.JPEG
+2025-03-03 11:13:59,870 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.67 (Running puzzleAcc=0.60, patchAcc=0.76) | Time=1.26s
+2025-03-03 11:13:59,871 [INFO] [Rank=1] Processing 160/25000: ILSVRC2012_test_00097454.JPEG
+2025-03-03 11:14:00,102 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.81, patchAcc=0.88) | Time=1.29s
+2025-03-03 11:14:00,103 [INFO] [Rank=0] Processing 160/25000: ILSVRC2012_test_00097713.JPEG
+2025-03-03 11:14:00,431 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.67 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.29s
+2025-03-03 11:14:00,432 [INFO] [Rank=2] Processing 159/25000: ILSVRC2012_test_00098711.JPEG
+2025-03-03 11:14:01,137 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.61, patchAcc=0.76) | Time=1.27s
+2025-03-03 11:14:01,138 [INFO] [Rank=1] Processing 161/25000: ILSVRC2012_test_00097458.JPEG
+2025-03-03 11:14:01,376 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.81, patchAcc=0.88) | Time=1.27s
+2025-03-03 11:14:01,377 [INFO] [Rank=0] Processing 161/25000: ILSVRC2012_test_00097717.JPEG
+2025-03-03 11:14:01,730 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.78) | Time=1.30s
+2025-03-03 11:14:01,731 [INFO] [Rank=2] Processing 160/25000: ILSVRC2012_test_00098715.JPEG
+2025-03-03 11:14:02,407 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.60, patchAcc=0.76) | Time=1.27s
+2025-03-03 11:14:02,408 [INFO] [Rank=1] Processing 162/25000: ILSVRC2012_test_00097462.JPEG
+2025-03-03 11:14:02,641 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.81, patchAcc=0.88) | Time=1.26s
+2025-03-03 11:14:02,642 [INFO] [Rank=0] Processing 162/25000: ILSVRC2012_test_00097721.JPEG
+2025-03-03 11:14:03,041 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.11 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.31s
+2025-03-03 11:14:03,042 [INFO] [Rank=2] Processing 161/25000: ILSVRC2012_test_00098719.JPEG
+2025-03-03 11:14:03,676 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.22 (Running puzzleAcc=0.60, patchAcc=0.75) | Time=1.27s
+2025-03-03 11:14:03,677 [INFO] [Rank=1] Processing 163/25000: ILSVRC2012_test_00097466.JPEG
+2025-03-03 11:14:03,929 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.80, patchAcc=0.87) | Time=1.29s
+2025-03-03 11:14:03,930 [INFO] [Rank=0] Processing 163/25000: ILSVRC2012_test_00097725.JPEG
+2025-03-03 11:14:04,309 [INFO] [Rank=2]   PuzzleAcc=0 PatchAcc=0.33 (Running puzzleAcc=0.63, patchAcc=0.77) | Time=1.27s
+2025-03-03 11:14:04,310 [INFO] [Rank=2] Processing 162/25000: ILSVRC2012_test_00098723.JPEG
+2025-03-03 11:14:04,923 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.11 (Running puzzleAcc=0.60, patchAcc=0.75) | Time=1.25s
+2025-03-03 11:14:04,924 [INFO] [Rank=1] Processing 164/25000: ILSVRC2012_test_00097470.JPEG
+2025-03-03 11:14:05,288 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.56 (Running puzzleAcc=0.80, patchAcc=0.87) | Time=1.36s
+2025-03-03 11:14:05,289 [INFO] [Rank=0] Processing 164/25000: ILSVRC2012_test_00097729.JPEG
+2025-03-03 11:14:05,592 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.28s
+2025-03-03 11:14:05,593 [INFO] [Rank=2] Processing 163/25000: ILSVRC2012_test_00098727.JPEG
+2025-03-03 11:14:06,188 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.11 (Running puzzleAcc=0.59, patchAcc=0.74) | Time=1.26s
+2025-03-03 11:14:06,199 [INFO] [Rank=1] Processing 165/25000: ILSVRC2012_test_00097474.JPEG
+2025-03-03 11:14:06,574 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.87) | Time=1.29s
+2025-03-03 11:14:06,586 [INFO] [Rank=0] Processing 165/25000: ILSVRC2012_test_00097733.JPEG
+2025-03-03 11:14:06,864 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.27s
+2025-03-03 11:14:06,868 [INFO] [Rank=2] Processing 164/25000: ILSVRC2012_test_00098731.JPEG
+2025-03-03 11:14:07,443 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.59, patchAcc=0.75) | Time=1.24s
+2025-03-03 11:14:07,444 [INFO] [Rank=1] Processing 166/25000: ILSVRC2012_test_00097478.JPEG
+2025-03-03 11:14:07,840 [INFO] [Rank=0]   PuzzleAcc=0 PatchAcc=0.00 (Running puzzleAcc=0.79, patchAcc=0.87) | Time=1.25s
+2025-03-03 11:14:07,841 [INFO] [Rank=0] Processing 166/25000: ILSVRC2012_test_00097737.JPEG
+2025-03-03 11:14:08,142 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.77) | Time=1.27s
+2025-03-03 11:14:08,144 [INFO] [Rank=2] Processing 165/25000: ILSVRC2012_test_00098735.JPEG
+2025-03-03 11:14:08,719 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.60, patchAcc=0.75) | Time=1.28s
+2025-03-03 11:14:08,720 [INFO] [Rank=1] Processing 167/25000: ILSVRC2012_test_00097482.JPEG
+2025-03-03 11:14:09,108 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.87) | Time=1.27s
+2025-03-03 11:14:09,109 [INFO] [Rank=0] Processing 167/25000: ILSVRC2012_test_00097741.JPEG
+2025-03-03 11:14:09,396 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.78) | Time=1.25s
+2025-03-03 11:14:09,397 [INFO] [Rank=2] Processing 166/25000: ILSVRC2012_test_00098739.JPEG
+2025-03-03 11:14:09,976 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.60, patchAcc=0.75) | Time=1.26s
+2025-03-03 11:14:09,977 [INFO] [Rank=1] Processing 168/25000: ILSVRC2012_test_00097486.JPEG
+2025-03-03 11:14:10,417 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.87) | Time=1.31s
+2025-03-03 11:14:10,418 [INFO] [Rank=0] Processing 168/25000: ILSVRC2012_test_00097745.JPEG
+2025-03-03 11:14:10,666 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.64, patchAcc=0.78) | Time=1.27s
+2025-03-03 11:14:10,667 [INFO] [Rank=2] Processing 167/25000: ILSVRC2012_test_00098743.JPEG
+2025-03-03 11:14:11,248 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.11 (Running puzzleAcc=0.60, patchAcc=0.75) | Time=1.27s
+2025-03-03 11:14:11,249 [INFO] [Rank=1] Processing 169/25000: ILSVRC2012_test_00097490.JPEG
+2025-03-03 11:14:11,692 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.87) | Time=1.27s
+2025-03-03 11:14:11,693 [INFO] [Rank=0] Processing 169/25000: ILSVRC2012_test_00097749.JPEG
+2025-03-03 11:14:11,966 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.30s
+2025-03-03 11:14:11,967 [INFO] [Rank=2] Processing 168/25000: ILSVRC2012_test_00098747.JPEG
+2025-03-03 11:14:12,501 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.22 (Running puzzleAcc=0.59, patchAcc=0.74) | Time=1.25s
+2025-03-03 11:14:12,502 [INFO] [Rank=1] Processing 170/25000: ILSVRC2012_test_00097494.JPEG
+2025-03-03 11:14:13,050 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.87) | Time=1.36s
+2025-03-03 11:14:13,051 [INFO] [Rank=0] Processing 170/25000: ILSVRC2012_test_00097753.JPEG
+2025-03-03 11:14:13,232 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.26s
+2025-03-03 11:14:13,233 [INFO] [Rank=2] Processing 169/25000: ILSVRC2012_test_00098751.JPEG
+2025-03-03 11:14:13,760 [INFO] [Rank=1]   PuzzleAcc=0 PatchAcc=0.78 (Running puzzleAcc=0.59, patchAcc=0.74) | Time=1.26s
+2025-03-03 11:14:13,761 [INFO] [Rank=1] Processing 171/25000: ILSVRC2012_test_00097498.JPEG
+2025-03-03 11:14:14,332 [INFO] [Rank=0]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.80, patchAcc=0.87) | Time=1.28s
+2025-03-03 11:14:14,333 [INFO] [Rank=0] Processing 171/25000: ILSVRC2012_test_00097757.JPEG
+2025-03-03 11:14:14,501 [INFO] [Rank=2]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.65, patchAcc=0.78) | Time=1.27s
+2025-03-03 11:14:14,502 [INFO] [Rank=2] Processing 170/25000: ILSVRC2012_test_00098755.JPEG
+2025-03-03 11:14:15,021 [INFO] [Rank=1]   PuzzleAcc=1 PatchAcc=1.00 (Running puzzleAcc=0.59, patchAcc=0.74) | Time=1.26s
+2025-03-03 11:14:15,022 [INFO] [Rank=1] Processing 172/25000: ILSVRC2012_test_00097502.JPEG
