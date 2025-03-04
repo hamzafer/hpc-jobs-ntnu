@@ -1,54 +1,55 @@
 #!/bin/bash
 #SBATCH --partition=GPUQ                 # Use the GPU queue
-#SBATCH --gres=gpu:h100:4                # Request the 4 H100 GPUs (adjust as needed)
-#SBATCH --nodes=1                        # Use 1 node (adjust if more GPUs free up)
-#SBATCH --ntasks=1                       # 4 tasks (1 per GPU)
-#SBATCH --cpus-per-task=16               # Allocate more CPU cores per GPU for better performance
-#SBATCH --mem=200G                       # Max available memory per node
-#SBATCH --time=14-00:00:00               # Set the max runtime (14 days)
+#SBATCH --gres=gpu:h100:4                # Request 4 H100 GPUs
+#SBATCH --nodes=1                        # 1 node
+#SBATCH --ntasks=1                       # 1 task
+#SBATCH --cpus-per-task=16               # 16 CPU cores
+#SBATCH --mem=200G                       # Memory per node
+#SBATCH --time=14-00:00:00               # Max runtime (14 days)
 #SBATCH --job-name=JPDVT_H100            # Name of the job
-#SBATCH --output=JPDVT_H100_%j.out       # Save stdout log
-#SBATCH --error=JPDVT_H100_%j.err        # Save stderr log
+#SBATCH --output=JPDVT_H100_4_%j.out     # Stdout log
+#SBATCH --error=JPDVT_H100_4_%j.err      # Stderr log
 
-# Load required modules
+# 1) Load modules
 module purge
 module load Anaconda3/2024.02-1
 module load CUDA/12.4.0
 
-# Activate the existing Conda environment
+# 2) Activate the existing conda env
 source activate /cluster/home/muhamhz/jpdvt_env
 
-# Generate a dynamic port for rendezvous (avoids conflicts with other jobs)
-# export MASTER_PORT=$((RANDOM % 1000 + 29000))  # Pick a random port between 29000-29999
-
-# Print system info
+# 3) Print system info
 echo "=============================================="
 echo "Starting job on $(hostname) at $(date)"
 echo "CUDA and GPU Information:"
-nvidia-smi  # Show GPU usage
+nvidia-smi
 python -c "import torch; print('CUDA Available:', torch.cuda.is_available())"
 echo "=============================================="
 
-# Install missing dependencies if needed (optional)
+# 4) Optionally install any missing pip packages
 # pip install --upgrade timm einops diffusers --no-cache-dir
 
-# Navigate to the project directory
+# 5) Navigate to project directory
 cd /cluster/home/muhamhz/JPDVT/image_model
 
-# Run training using all available H100 GPUs
-# srun torchrun --nnodes=1 --nproc_per_node=4 train_JPDVT.py --dataset imagenet --data-path /cluster/home/muhamhz/data/imagenet --image-size 192 --crop
-srun torchrun --nnodes=1 --nproc_per_node=4 train_JPDVT.py \
+# 6) Run training using all available H100 GPUs
+#    --model     => sets the model to "JPDVT-T" (tiny variant for 4×4)
+#    --image-size 256 => 4×64 puzzle pieces
+#    --epochs 100 => fewer epochs recommended
+#    --ckpt       => you can comment this out if you want to start from scratch
+#    (You can also adjust --ckpt-every to control how often checkpoints are saved.)
+srun torchrun --nnodes=1 --nproc_per_node=4 train_JPDVT_4x4.py \
     --dataset imagenet \
     --data-path /cluster/home/muhamhz/data/imagenet \
-    --image-size 192 \
+    --image-size 256 \
+    --model JPDVT-T \
     --crop \
-    --ckpt /cluster/home/muhamhz/JPDVT/image_model/results/004-imagenet-JPDVT-crop/checkpoints/4070000.pt \
-    --epochs 207 \
-    --ckpt-every 50000
+    --epochs 100 \
+    --ckpt-every 100000
 
-# --rdzv_endpoint=localhost:$MASTER_PORT
+# Locally:
+# torchrun --nnodes=1 --nproc_per_node=1 train_JPDVT_4x4.py --dataset imagenet --data-path /cluster/home/muhamhz/data/imagenet --image-size 256 --model JPDVT-T --crop
 
-# Print completion message
 echo "=============================================="
 echo "Training completed at $(date)"
 echo "=============================================="
