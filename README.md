@@ -1,4 +1,4 @@
-# HPC Jobs for NTNU
+# HPC Jobs for NTNU IDUN
 
 A collection of SLURM job scripts, utility tools, and log-management conventions for running JPDVT experiments on the NTNU HPC cluster.
 
