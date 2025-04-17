@@ -1,14 +1,14 @@
 #!/bin/bash
-#SBATCH --partition=GPUQ                  # Use the GPU queue
-#SBATCH --gres=gpu:h100:1                 # Request 1 H100 GPU
-#SBATCH --nodes=1                         # Use 1 node
-#SBATCH --ntasks=1                        # One task only
-#SBATCH --cpus-per-task=8                 # Enough CPU per GPU
-#SBATCH --mem=200G                        # Max available memory per node
-#SBATCH --time=14-00:00:00                # Run for up to 14 days
-#SBATCH --job-name=FCViT_H100             # Job name
-#SBATCH --output=fcvit_h100_%j.out        # Stdout log
-#SBATCH --error=fcvit_h100_%j.err         # Stderr log
+#SBATCH --partition=GPUQ                      # Use the GPU queue
+#SBATCH --gres=gpu:h100:1                     # Request 1 H100 GPU
+#SBATCH --nodes=1                             # Use 1 node
+#SBATCH --ntasks=1                            # One task only
+#SBATCH --cpus-per-task=8                     # Enough CPU per GPU
+#SBATCH --mem=200G                            # Max available memory per node
+#SBATCH --time=14-00:00:00                    # Run for up to 14 days
+#SBATCH --job-name=FCViT_H100                 # Job name
+#SBATCH --output=logs/out/fcvit_h100_%j.out   # Stdout log
+#SBATCH --error=logs/err/fcvit_h100_%j.err    # Stderr log
 
 # Load modules
 module purge
