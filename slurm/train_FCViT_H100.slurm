@@ -6,7 +6,7 @@
 #SBATCH --cpus-per-task=8                      # 8 CPU threads per rank
 #SBATCH --mem=200G
 #SBATCH --time=14-00:00:00
-#SBATCH --job-name=FCViT_H100_NEW
+#SBATCH --job-name=FCViT_H100_normal
 #SBATCH --output=logs/out/fcvit_h100_%j.out
 #SBATCH --error=logs/err/fcvit_h100_%j.err
 
@@ -37,8 +37,6 @@ cd /cluster/home/muhamhz/fcvit-mt-ntnu
 CUDA_VISIBLE_DEVICES=0,1,2,3 \
 accelerate launch \
   --num_processes 4 \
-  --mixed_precision fp16 \
-  --gradient_accumulation_steps 2 \
   main_train.py \
     --backbone vit_base_patch16_224 \
     --size_puzzle 225 \
@@ -50,7 +48,7 @@ accelerate launch \
     --batch_size 64 \
     --num_workers 12 \
     --data_path /cluster/home/muhamhz/data/imagenet \
-    --output_dir /cluster/home/muhamhz/fcvit-mt-ntnu/output_fcvit_h100
+    --output_dir /cluster/home/muhamhz/fcvit-mt-ntnu/output_fcvit_h100_normal
 
 echo "=============================================="
 echo "FCViT Training completed at $(date)"
