@@ -43,12 +43,12 @@ accelerate launch \
     --size_fragment 75 \
     --num_fragment 9 \
     --lr 3e-05 \
-    --epochs 100 \
+    --epochs 500 \
     --weight_decay 0.05 \
     --batch_size 64 \
     --num_workers 12 \
     --data_path /cluster/home/muhamhz/data/imagenet \
-    --output_dir /cluster/home/muhamhz/fcvit-mt-ntnu/output_fcvit_h100_normal
+    --output_dir /cluster/home/muhamhz/fcvit-mt-ntnu/output_fcvit_new
 
 echo "=============================================="
 echo "FCViT Training completed at $(date)"
