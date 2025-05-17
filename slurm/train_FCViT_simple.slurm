@@ -44,7 +44,7 @@ python main_train.py \
   --batch_size 64 \
   --num_workers 12 \
   --data_path /cluster/home/muhamhz/data/imagenet \
-  --output_dir /cluster/home/muhamhz/fcvit-mt-ntnu/output_fcvit_new
+  --output_dir /cluster/home/muhamhz/fcvit-mt-ntnu/output_fcvit_simple
 
 echo "=============================================="
 echo "FCViT Training completed at $(date)"
