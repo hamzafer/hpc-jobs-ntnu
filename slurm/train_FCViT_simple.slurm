@@ -1,14 +1,14 @@
 #!/bin/bash
 #SBATCH --partition=GPUQ                       # GPU queue
-#SBATCH --gres=gpu:h100:4                      # 4× H100 on this node
+#SBATCH --gres=gpu:h100:1                      # 1× H100 GPU
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=4                    # 1 rank per GPU
+#SBATCH --ntasks-per-node=1                    # 1 rank per GPU
 #SBATCH --cpus-per-task=8                      # 8 CPU threads per rank
 #SBATCH --mem=200G
 #SBATCH --time=14-00:00:00
 #SBATCH --job-name=FCViT_simple
-#SBATCH --output=logs/out/fcvit_h100_%j.out
-#SBATCH --error=logs/err/fcvit_h100_%j.err
+#SBATCH --output=logs/out/fcvit_simple_%j.out
+#SBATCH --error=logs/err/fcvit_simple_%j.err
 
 # ── modules & conda env ───────────────────────────────────────────────
 module purge
@@ -32,23 +32,19 @@ echo "=============================================="
 # ── move to repo ──────────────────────────────────────────────────────
 cd /cluster/home/muhamhz/fcvit-mt-ntnu
 
-# ── launch training with 🤗 Accelerate ────────────────────────────────
-# Per‑GPU batch = 32  →  32 × 4 GPUs × 2 grad‑accum = 256 global
-CUDA_VISIBLE_DEVICES=0,1,2,3 \
-accelerate launch \
-  --num_processes 4 \
-  main_train.py \
-    --backbone vit_base_patch16_224 \
-    --size_puzzle 225 \
-    --size_fragment 75 \
-    --num_fragment 9 \
-    --lr 3e-05 \
-    --epochs 500 \
-    --weight_decay 0.05 \
-    --batch_size 64 \
-    --num_workers 12 \
-    --data_path /cluster/home/muhamhz/data/imagenet \
-    --output_dir /cluster/home/muhamhz/fcvit-mt-ntnu/output_fcvit_new
+# ── launch standard training with standard parameters ─────────────────
+python main_train.py \
+  --backbone vit_base_patch16_224 \
+  --size_puzzle 225 \
+  --size_fragment 75 \
+  --num_fragment 9 \
+  --lr 3e-05 \
+  --epochs 100 \
+  --weight_decay 0.05 \
+  --batch_size 64 \
+  --num_workers 12 \
+  --data_path /cluster/home/muhamhz/data/imagenet \
+  --output_dir /cluster/home/muhamhz/fcvit-mt-ntnu/output_fcvit_new
 
 echo "=============================================="
 echo "FCViT Training completed at $(date)"
