@@ -1,10 +1,10 @@
 #!/bin/bash
-#SBATCH --partition=GPUQ                       # GPU queue
-#SBATCH --gres=gpu:h100:1                      # 1× H100 GPU
+#SBATCH --partition=GPUQ
+#SBATCH --gres=gpu:h100:4              # Request 4 H100s
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1                    # 1 rank per GPU
-#SBATCH --cpus-per-task=8                      # 8 CPU threads per rank
-#SBATCH --mem=200G
+#SBATCH --ntasks=1                     # Single task with multiple processes
+#SBATCH --cpus-per-task=32             # 8 CPUs per GPU × 4 GPUs
+#SBATCH --mem=128G
 #SBATCH --time=14-00:00:00
 #SBATCH --job-name=FCViT_simple
 #SBATCH --output=logs/out/fcvit_simple_%j.out
@@ -32,8 +32,8 @@ echo "=============================================="
 # ── move to repo ──────────────────────────────────────────────────────
 cd /cluster/home/muhamhz/fcvit-mt-ntnu
 
-# ── launch standard training with standard parameters ─────────────────
-python main_train.py \
+# Launch with srun + torchrun for better integration with SLURM
+srun torchrun --nnodes=1 --nproc_per_node=4 main_train.py \
   --backbone vit_base_patch16_224 \
   --size_puzzle 225 \
   --size_fragment 75 \
@@ -41,8 +41,8 @@ python main_train.py \
   --lr 3e-05 \
   --epochs 100 \
   --weight_decay 0.05 \
-  --batch_size 64 \
-  --num_workers 12 \
+  --batch_size 16 \
+  --num_workers 8 \
   --data_path /cluster/home/muhamhz/data/imagenet \
   --output_dir /cluster/home/muhamhz/fcvit-mt-ntnu/output_fcvit_simple
 
